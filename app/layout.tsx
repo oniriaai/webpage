@@ -3,6 +3,8 @@ import { Geist, Geist_Mono, Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
+import Navbar from "@/components/layout/navbar"
+import Footer from "@/components/layout/footer"
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'})
 
@@ -22,9 +24,17 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn("antialiased", fontMono.variable, "font-sans", inter.variable)}
     >
+    <head> 
+      <link rel="icon" type="image/x-icon" href="/icon.svg"></link>
+    </head>
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <Navbar/>
+          {children}
+          <Footer/>
+        </ThemeProvider>
       </body>
     </html>
   )
 }
+//<title>{Navbar.name}</title>
