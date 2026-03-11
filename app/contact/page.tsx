@@ -1,11 +1,15 @@
-import React from 'react'
+import ContactForm from "./contact-form";
 
-function Page() {
-  return (
-    <div>
-      
-    </div>
-  )
+export const metadata = {
+  title: 'Contact',
+  description: '',
+};
+
+export default function ContactPage(){
+
+return (
+    <>
+        <ContactForm/>
+    </>
+  );
 }
-
-export default Page
