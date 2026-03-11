@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "../components/ui/card";
 import AnimatedCard from './animated-card';
 import Schedule from './schedule';
 import { Zap, Workflow, Bot, Globe } from "lucide-react";

@@ -2,11 +2,11 @@
 import React from 'react'
 import { useState } from "react";
 import { motion } from "motion/react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
+import { Card, CardContent } from "../../components/ui/card";
+import { Button } from "../../components/ui/button";
+import { Input } from "../../components/ui/input";
+import { Textarea } from "../../components/ui/textarea";
+import { Label } from "../../components/ui/label";
 import { CheckCircle } from "lucide-react";
 
 
@@ -86,7 +86,7 @@ function ContactForm() {
                         name="message"
                         required
                         placeholder="Describe the automation you want to build"
-                        className="min-h-[120px]"
+                        className="min-h-30"
                     />
                     </div>
 
