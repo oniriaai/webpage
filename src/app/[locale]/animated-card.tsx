@@ -1,23 +1,24 @@
 "use client";
 import React from 'react'
 import { motion } from "motion/react";
-import { Card, CardContent } from "../components/ui/card";
-import { Button } from "../components/ui/button";
+import { Card, CardContent } from "../../components/ui/card";
+import { Button } from "../../components/ui/button";
+import { useTranslations } from 'next-intl';
 
 function AnimatedCard() {
+  const t = useTranslations("AnimatedCard");
   return (
     <section className="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
         <motion.div initial={{opacity:0,y:40}} animate={{opacity:1,y:0}} transition={{duration:0.6}}>
           <h2 className="text-5xl font-bold leading-tight mb-6">
-            Intelligent Automation for Modern Businesses
+            {t('title')}
           </h2>
           <p className="text-lg mb-8">
-            ONIRIASOLUTIONS builds powerful automation systems that connect
-            your tools, streamline operations, and unlock scalable growth.
+            {t('description')}
           </p>
           <div className="flex gap-4">
-            <Button size="lg" className="rounded-2xl">Start Automating</Button>
-            <Button size="lg" variant="outline" className="rounded-2xl">See How It Works</Button>
+            <Button size="lg" className="rounded-2xl">{t('button1')}</Button>
+            <Button size="lg" variant="outline" className="rounded-2xl">{t('button2')}</Button>
           </div>
         </motion.div>
 

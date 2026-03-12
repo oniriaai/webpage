@@ -1,0 +1,64 @@
+{
+    "LocaleSwitcher": {
+        "select_language":"Enlish",
+        "language":{
+            "en": "English",
+            "es": "Spanish"
+        }
+    },
+    "Navigation":{
+        "solutions":"Solutions",
+        "contact": "Contact",
+        "demo":"Book a Demo",
+        "Footer":"Automation • AI • Integrations"
+    },
+    "LandingPage": {
+        "title": "Automation Capabilities",
+        "card1": {
+            "title":"Workflow Automation",
+            "description":"Connect apps and automate complex processes."
+        },
+        "card2": {
+            "title":"AI Agents",
+            "description":"Deploy AI assistants that handle tasks automatically."
+        },
+        "card3": {
+            "title":"Real-time Integrations",
+            "description":"Sync data across your entire tech stack instantly."
+        },
+        "card4": {
+            "title":"Global Infrastructure",
+            "description":"Secure and scalable cloud architecture."
+        }
+    },
+    "AnimatedCard": {
+        "title":"Intelligent Automation for Modern Businesses",
+        "description":"ONIRIASOLUTIONS builds powerful automation systems that connect your tools, streamline operations, and unlock scalable growth.",
+        "button1":"Start Automating",
+        "button2":"See How It Works"
+    },
+    "Schedule": {
+        "title": "Ready to Automate Your Business?",
+        "description":"Transform repetitive workflows into intelligent automated systems.",
+        "button":"Schedule a Consultation"
+    },
+    "Contact":{
+        "title":"Contact ONIRIASOLUTIONS",
+        "description":"Tell us about the automation you want to build.",
+        "sent": {
+            "title":"Message sent successfully",
+            "description":"Our team will get back to you shortly."
+        },
+        "name": "Name",
+        "email": "Email",
+        "company": "Company",
+        "project": {
+            "title":"Project Description",
+            "description":"Describe the automation you want to build"
+        },
+        "button":{
+            "sending":"Sending message...",
+            "pending":"Send Message"
+        }
+    }
+}

@@ -2,18 +2,18 @@
 import React from 'react'
 import { useState } from "react";
 import { motion } from "motion/react";
-import { Card, CardContent } from "../../components/ui/card";
-import { Button } from "../../components/ui/button";
-import { Input } from "../../components/ui/input";
-import { Textarea } from "../../components/ui/textarea";
-import { Label } from "../../components/ui/label";
+import { Card, CardContent } from "../../../components/ui/card";
+import { Button } from "../../../components/ui/button";
+import { Input } from "../../../components/ui/input";
+import { Textarea } from "../../../components/ui/textarea";
+import { Label } from "../../../components/ui/label";
 import { CheckCircle } from "lucide-react";
-
+import { useTranslations } from 'next-intl';
 
 function ContactForm() {
     const [loading,setLoading] = useState(false);
     const [success,setSuccess] = useState(false);
-
+    const t = useTranslations('Contact');
 
     async function handleSubmit(e:React.FormEvent<HTMLFormElement>){
         e.preventDefault();
@@ -55,43 +55,43 @@ function ContactForm() {
         >
             <Card className="rounded-2xl shadow-xl">
             <CardContent className="p-10">
-                <h1 className="text-3xl font-bold mb-2">Contact ONIRIASOLUTIONS</h1>
-                <p className="mb-8">Tell us about the automation you want to build.</p>
+                <h1 className="text-3xl font-bold mb-2">{t('title')}</h1>
+                <p className="mb-8">{t('description')}</p>
 
                 {success ? (
                 <div className="flex flex-col items-center text-center gap-4 py-8">
                     <CheckCircle className="h-10 w-10 " />
-                    <p className=" text-lg font-medium">Message sent successfully</p>
-                    <p className="text-sm">Our team will get back to you shortly.</p>
+                    <p className=" text-lg font-medium">{t('sent.title')}</p>
+                    <p className="text-sm">{t('sent.description')}</p>
                 </div>
                 ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="space-y-2">
-                    <Label htmlFor="name">Name</Label>
-                    <Input name="name" required placeholder="John Doe" />
+                    <Label htmlFor="name">{t('name')}</Label>
+                    <Input name="name" required placeholder={t('name')} />
                     </div>
 
                     <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
-                    <Input name="email" type="email" required placeholder="john@company.com" />
+                    <Label htmlFor="email">{t('email')}</Label>
+                    <Input name="email" type="email" required placeholder={t('email')} />
                     </div>
                     <div className="space-y-2">
-                    <Label htmlFor="company">Company</Label>
-                    <Input name="company" placeholder="Your company" />
+                    <Label htmlFor="company">{t('company')}</Label>
+                    <Input name="company" placeholder={t('company')} />
                     </div>
 
                     <div className="space-y-2">
-                    <Label htmlFor="message">Project Description</Label>
+                    <Label htmlFor="message">{t('project.title')}</Label>
                     <Textarea
                         name="message"
                         required
-                        placeholder="Describe the automation you want to build"
+                        placeholder={t('project.description')}
                         className="min-h-30"
                     />
                     </div>
 
                     <Button type="submit" size="lg" className="w-full rounded-2xl" disabled={loading}>
-                    {loading ? "Sending message..." : "Send Message"}
+                    {loading ? t('button.sending') : t('button.pending')}
                     </Button>
                 </form>
                 )}
