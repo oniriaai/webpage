@@ -2,20 +2,14 @@
 
 This is a Next.js template with shadcn/ui.
 
-## Adding components
+# Important Documentation
+For UI components:
+https://ui.shadcn.com/
 
-To add components to your app, run the following command:
+For Animations:
+https://motion.dev/docs
 
-```bash
-npx shadcn@latest add button
-```
+For Multilanguage Support:
+https://next-intl.dev/
 
-This will place the ui components in the `components` directory.
-
-## Using components
-
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button";
-```
+## Deployment for testing is conected directly to a vercel app through the github repository.

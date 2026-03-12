@@ -36,10 +36,10 @@ export default function Navbar() {
           </SheetTrigger>
           <SheetContent className="p-4" side="right">
             <div className="flex flex-col gap-6 mt-10">
+              <LocaleSwitcher />
               <Link href="/solutions" className="align-middle">{t('solutions')}</Link>
               <Link href="/contact">{t('contact')}</Link>
-              <Button className="rounded-2xl">{t('demo')}</Button>
-              <LocaleSwitcher />
+              <Button className="rounded-xl">{t('demo')}</Button>
             </div>
           </SheetContent>
         </Sheet>

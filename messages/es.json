@@ -12,6 +12,11 @@
         "demo":"Reserve una demostración",
         "Footer":"Automatización • IA • Integraciones"
     },
+    "NotFound":{ 
+        "title": "Página no encontrada",
+        "description": "Lo sentimos, no hemos podido encontrar la página que busca",
+        "backHome": "Volver a la página de inicio"
+    },
     "LandingPage": {
         "title": "Capacidades de Automatización",
         "card1": {
