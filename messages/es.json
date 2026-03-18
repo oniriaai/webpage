@@ -21,22 +21,23 @@
         "title": "Capacidades de Automatización",
         "card1": {
             "title":"Automatización del flujo de trabajo",
-            "description":"Conecta aplicaciones y automatiza procesos complejos"
+            "description":"Diseñe ecosistemas conectados que eliminan las tareas manuales de su día a día."
         },
         "card2": {
             "title":"Agentes de IA",
-            "description":"Implementa asistentes de IA que gestionan tareas automáticamente"
+            "description":"Despliegue bots autónomos capaces de razonar y ejecutar tareas complejas sin supervisión."
         },
         "card3": {
-            "title":"Integraciones en tiempo real",
-            "description":"Sincroniza datos en toda tu pila tecnológica al instante."
+            "title":"Sincronización en tiempo real",
+            "description":"Conecte sus herramientas favoritas y mantenga sus datos actualizados en milisegundos."
         },
         "card4": {
             "title":"Infraestructura global",
-            "description":"Arquitectura en la nube segura y escalable."
+            "description":"Escalabilidad garantizada con baja latencia en cualquier región del mundo."
         }
     },
     "AnimatedCard": {
+        "badge": "Automatización con IA",
         "title":"Automatización inteligente para empresas modernas",
         "description":"ONIRIASOLUTIONS crea potentes sistemas de automatización que conectan sus herramientas, optimizan las operaciones y permiten un crecimiento escalable.",
         "button1":"Comience a automatizar",
@@ -67,4 +68,3 @@
         }
     }
 }
-
