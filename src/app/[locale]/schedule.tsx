@@ -16,9 +16,9 @@ export default function Schedule() {
 
   return (
     <section className="relative overflow-hidden mx-4 md:mx-8 xl:mx-auto max-w-6xl my-16">
-      <div className="relative rounded-[2rem] overflow-hidden border border-white/[0.06] bg-[#0d0d1a]">
+      <div className="relative rounded-[2rem] overflow-hidden border border-white/6 bg-[#0d0d1a]">
         {/* Background gradient orb */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-purple-600/15 blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-75 bg-purple-600/15 blur-[120px] rounded-full pointer-events-none" />
 
         {/* Grid pattern */}
         <div
@@ -33,7 +33,7 @@ export default function Schedule() {
         />
 
         {/* Top gradient accent */}
-        <div className="absolute top-0 left-[20%] right-[20%] h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent" />
+        <div className="absolute top-0 left-[20%] right-[20%] h-px bg-linear-to-r from-transparent via-purple-500/30 to-transparent" />
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}

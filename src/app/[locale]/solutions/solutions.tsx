@@ -68,10 +68,10 @@ export default function Solutions() {
     <div className="relative min-h-screen w-full overflow-x-hidden bg-black text-white">
       {/* Background effects (unchanged) */}
       <div className="pointer-events-none fixed inset-0 z-0">
-        <div className="absolute -top-48 -left-48 h-[40rem] w-[40rem] rounded-full bg-purple-600/20 blur-[120px]" />
-        <div className="absolute top-1/3 -right-48 h-[35rem] w-[35rem] rounded-full bg-cyan-600/20 blur-[130px]" />
-        <div className="absolute bottom-0 left-1/3 h-[30rem] w-[30rem] rounded-full bg-emerald-600/15 blur-[110px]" />
-        <div className="absolute bottom-1/4 right-1/4 h-[25rem] w-[25rem] rounded-full bg-blue-600/20 blur-[100px]" />
+        <div className="absolute -top-48 -left-48 h-160 w-160 rounded-full bg-purple-600/20 blur-[120px]" />
+        <div className="absolute top-1/3 -right-48 h-140 w-140 rounded-full bg-cyan-600/20 blur-[130px]" />
+        <div className="absolute bottom-0 left-1/3 h-120 w-120 rounded-full bg-emerald-600/15 blur-[110px]" />
+        <div className="absolute bottom-1/4 right-1/4 h-100 w-100 rounded-full bg-blue-600/20 blur-[100px]" />
       </div>
 
       <div
@@ -100,7 +100,7 @@ export default function Solutions() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2, type: "spring", stiffness: 200 }}
-            className="mb-6 bg-gradient-to-r from-purple-400 via-cyan-400 to-emerald-400 bg-clip-text text-5xl font-bold tracking-tight text-transparent sm:text-6xl md:text-7xl whitespace-pre-line"
+            className="mb-6 bg-linear-to-r from-purple-400 via-cyan-400 to-emerald-400 bg-clip-text text-5xl font-bold tracking-tight text-transparent sm:text-6xl md:text-7xl whitespace-pre-line"
           >
             {t("hero.title")}
           </motion.h1>
@@ -120,7 +120,7 @@ export default function Solutions() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mt-10 flex flex-wrap items-center justify-center gap-4"
           >
-            <Button className="group relative overflow-hidden bg-gradient-to-r from-purple-600 to-blue-600 px-6 py-6 text-base font-semibold transition-all hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25">
+            <Button className="group relative overflow-hidden bg-linear-to-r from-purple-600 to-blue-600 px-6 py-6 text-base font-semibold transition-all hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25">
               {t("hero.ctaPrimary")}
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
@@ -169,7 +169,7 @@ export default function Solutions() {
                   transition={{ type: "spring", stiffness: 350, damping: 18 }}
                   className="group h-full"
                 >
-                  <Card className="relative h-full overflow-hidden border border-white/10 bg-gradient-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-sm transition-all duration-300 hover:border-purple-500/40 hover:shadow-2xl hover:shadow-purple-500/10">
+                  <Card className="relative h-full overflow-hidden border border-white/10 bg-linear-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-sm transition-all duration-300 hover:border-purple-500/40 hover:shadow-2xl hover:shadow-purple-500/10">
                     <div
                       className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                       style={{
@@ -178,7 +178,7 @@ export default function Solutions() {
                     />
                     <CardHeader className="relative z-10 space-y-4 pb-2">
                       <div
-                        className={`flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br ${gradient} bg-opacity-20 shadow-lg shadow-purple-900/20`}
+                        className={`flex h-14 w-14 items-center justify-center rounded-xl bg-linear-to-br ${gradient} bg-opacity-20 shadow-lg shadow-purple-900/20`}
                       >
                         {Icon && <Icon className="h-7 w-7 text-white drop-shadow-sm" />}
                       </div>
@@ -207,9 +207,9 @@ export default function Solutions() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="relative mx-auto max-w-4xl rounded-2xl border border-white/10 bg-gradient-to-r from-gray-900/50 to-gray-800/30 p-8 backdrop-blur-md sm:p-12"
+          className="relative mx-auto max-w-4xl rounded-2xl border border-white/10 bg-linear-to-r from-gray-900/50 to-gray-800/30 p-8 backdrop-blur-md sm:p-12"
         >
-          <div className="absolute -inset-px rounded-2xl bg-gradient-to-r from-purple-500/30 via-cyan-500/30 to-emerald-500/30 opacity-40 blur-md" />
+          <div className="absolute -inset-px rounded-2xl bg-linear-to-r from-purple-500/30 via-cyan-500/30 to-emerald-500/30 opacity-40 blur-md" />
           <div className="relative z-10 text-center">
             <h3 className="mb-4 text-3xl font-bold sm:text-4xl">
               {t("cta.title")}
@@ -217,14 +217,14 @@ export default function Solutions() {
             <p className="mx-auto mb-8 max-w-xl text-[#94a3b8]">
               {t("cta.subtitle")}
             </p>
-            <Button className="group bg-gradient-to-r from-purple-600 to-cyan-600 px-8 py-6 text-base font-semibold shadow-lg shadow-purple-500/20 transition-all hover:scale-105 hover:shadow-xl">
+            <Button className="group bg-linear-to-r from-purple-600 to-cyan-600 px-8 py-6 text-base font-semibold shadow-lg shadow-purple-500/20 transition-all hover:scale-105 hover:shadow-xl">
               {t("cta.button")}
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
         </motion.div>
 
-        <div className="pointer-events-none absolute bottom-0 left-0 h-64 w-full bg-gradient-to-t from-black to-transparent" />
+        <div className="pointer-events-none absolute bottom-0 left-0 h-64 w-full bg-linear-to-t from-black to-transparent" />
       </div>
     </div>
   );
