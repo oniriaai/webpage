@@ -1,49 +1,31 @@
 "use client";
 import React from 'react'
-import { useState } from "react";
+import { useActionState } from "react";
 import { motion } from "motion/react";
 import { Card, CardContent } from "../../../components/ui/card";
 import { Button } from "../../../components/ui/button";
 import { Input } from "../../../components/ui/input";
 import { Textarea } from "../../../components/ui/textarea";
 import { Label } from "../../../components/ui/label";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, AlertCircle } from "lucide-react";
 import { useTranslations } from 'next-intl';
+import { submitContact } from './submit-contact';
+
+
+// Define the shape of the action state
+type ActionState = { success?: boolean; error?: string } | null;
 
 function ContactForm() {
-    const [loading,setLoading] = useState(false);
-    const [success,setSuccess] = useState(false);
-    const t = useTranslations('Contact');
+    const t = useTranslations("Contact");
 
-    async function handleSubmit(e:React.FormEvent<HTMLFormElement>){
-        e.preventDefault();
-        setLoading(true);
+    // useActionState returns [state, formAction, isPending]
+    const [state, formAction, isPending] = useActionState<ActionState, FormData>(
+    submitContact,
+    null);
 
-        const formData = new FormData(e.currentTarget);
-
-        const payload = {
-        name: formData.get("name"),
-        email: formData.get("email"),
-        company: formData.get("company"),
-        message: formData.get("message"),
-        createdAt: new Date().toISOString()
-        };
-
-        try{
-        await new Promise((r)=>setTimeout(r,1200));
-
-        await fetch("/api/contact",{
-            method:"POST",
-            headers:{"Content-Type":"application/json"},
-            body: JSON.stringify(payload)
-        });
-        setSuccess(true);
-        }catch(err){
-        console.error(err);
-        }finally{
-        setLoading(false);
-        }
-    }
+    // Determine if submission succeeded
+    const success = state?.success === true;
+    const error = state?.error;
 
   return (
     <div className="min-h-screen flex items-center justify-center px-6 py-24">
@@ -65,19 +47,31 @@ function ContactForm() {
                     <p className="text-sm">{t('sent.description')}</p>
                 </div>
                 ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form action={formAction} className="space-y-6">
                     <div className="space-y-2">
-                    <Label htmlFor="name">{t('name')}</Label>
-                    <Input name="name" required placeholder={t('name')} />
+                        <Label htmlFor="name">{t('name')}</Label>
+                        <Input name="name" 
+                            required 
+                            placeholder={t('name')} 
+                            disabled={isPending}
+                            />
                     </div>
 
                     <div className="space-y-2">
-                    <Label htmlFor="email">{t('email')}</Label>
-                    <Input name="email" type="email" required placeholder={t('email')} />
+                        <Label htmlFor="email">{t('email')}</Label>
+                        <Input name="email" 
+                            type="email" 
+                            required   
+                            placeholder={t('email')} 
+                            disabled={isPending}
+                            />
                     </div>
                     <div className="space-y-2">
-                    <Label htmlFor="company">{t('company')}</Label>
-                    <Input name="company" placeholder={t('company')} />
+                        <Label htmlFor="company">{t('company')}</Label>
+                        <Input name="company" 
+                            placeholder={t('company')} 
+                            disabled={isPending}
+                            />
                     </div>
 
                     <div className="space-y-2">
@@ -87,11 +81,24 @@ function ContactForm() {
                         required
                         placeholder={t('project.description')}
                         className="min-h-30"
+                        disabled={isPending}
                     />
                     </div>
 
-                    <Button type="submit" size="lg" className="w-full rounded-2xl" disabled={loading}>
-                    {loading ? t('button.sending') : t('button.pending')}
+
+                        {error && (
+                    <div className="flex items-center gap-2 text-red-500 text-sm">
+                        <AlertCircle className="h-4 w-4" />
+                        <span>{error}</span>
+                    </div>
+                    )}
+
+                    <Button type="submit" 
+                        size="lg" 
+                        className="w-full rounded-2xl" 
+                        disabled={isPending}
+                        >
+                        {isPending ? t('button.sending') : t('button.pending')}
                     </Button>
                 </form>
                 )}
