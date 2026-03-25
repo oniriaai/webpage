@@ -91,5 +91,49 @@
                 "description": "Discover how AI is transforming industries and solving global problems."
             }
         }
+    },
+    "Solutions": {
+        "hero": {
+            "badge": "Oniria Automation Suite",
+            "title": "Intelligence that flows\nacross your entire stack",
+            "subtitle": "Purpose‑built solutions that combine workflow intelligence, autonomous AI, real‑time sync, and planet‑scale infrastructure.",
+            "ctaPrimary": "Explore solutions",
+            "ctaSecondary": "Talk to an expert"
+        },
+        "section": {
+            "title": "Everything you need to automate at scale",
+            "subtitle": "Modular, high‑performance solutions that adapt to your business — from real‑time data to autonomous decision‑making."
+        },
+        "cards": [
+            {
+            "id": "workflow-automation",
+            "title": "Workflow Automation",
+            "description": "Design connected ecosystems that eliminate manual tasks from your daily operations.",
+            "learnMore": "Learn more"
+            },
+            {
+            "id": "ai-agents",
+            "title": "AI Agents",
+            "description": "Deploy autonomous bots capable of reasoning and executing complex tasks without supervision.",
+            "learnMore": "Learn more"
+            },
+            {
+            "id": "real-time-sync",
+            "title": "Real-time Sync",
+            "description": "Connect your favorite tools and keep your data updated in milliseconds.",
+            "learnMore": "Learn more"
+            },
+            {
+            "id": "global-infrastructure",
+            "title": "Global Infrastructure",
+            "description": "Guaranteed scalability with low latency in any region of the world.",
+            "learnMore": "Learn more"
+            }
+        ],
+        "cta": {
+            "title": "Ready to build the autonomous enterprise?",
+            "subtitle": "Join hundreds of teams that automate mission‑critical workflows with Oniria’s intelligent infrastructure.",
+            "button": "Start your automation journey"
+        }
     }
 }

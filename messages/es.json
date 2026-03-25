@@ -91,5 +91,49 @@
                 "description": "Descubre cómo la IA está transformando industrias y resolviendo problemas globales."
             }
         }
+    },
+    "Solutions": {
+        "hero": {
+            "badge": "Oniria Automation Suite",
+            "title": "Inteligencia que fluye\npor toda tu pila tecnológica",
+            "subtitle": "Soluciones diseñadas específicamente que combinan inteligencia de flujos de trabajo, IA autónoma, sincronización en tiempo real e infraestructura a escala planetaria.",
+            "ctaPrimary": "Explorar soluciones",
+            "ctaSecondary": "Hablar con un experto"
+        },
+        "section": {
+            "title": "Todo lo que necesitas para automatizar a escala",
+            "subtitle": "Soluciones modulares y de alto rendimiento que se adaptan a tu negocio — desde datos en tiempo real hasta toma de decisiones autónoma."
+        },
+        "cards": [
+        {
+            "id": "workflow-automation",
+            "title": "Automatización de flujos de trabajo",
+            "description": "Diseña ecosistemas conectados que eliminan tareas manuales de tus operaciones diarias.",
+            "learnMore": "Más información"
+        },
+        {
+            "id": "ai-agents",
+            "title": "Agentes de IA",
+            "description": "Implementa bots autónomos capaces de razonar y ejecutar tareas complejas sin supervisión.",
+            "learnMore": "Más información"
+        },
+        {
+            "id": "real-time-sync",
+            "title": "Sincronización en tiempo real",
+            "description": "Conecta tus herramientas favoritas y mantén tus datos actualizados en milisegundos.",
+            "learnMore": "Más información"
+        },
+        {
+            "id": "global-infrastructure",
+            "title": "Infraestructura global",
+            "description": "Escalabilidad garantizada con baja latencia en cualquier región del mundo.",
+            "learnMore": "Más información"
+        }
+        ],
+        "cta": {
+            "title": "¿Listo para construir la empresa autónoma?",
+            "subtitle": "Únete a cientos de equipos que automatizan flujos de trabajo críticos con la infraestructura inteligente de Oniria.",
+            "button": "Comienza tu viaje hacia la automatización"
+        }
     }
 }

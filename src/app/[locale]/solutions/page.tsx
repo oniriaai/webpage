@@ -1,16 +1,12 @@
 import React from 'react'
+import Solutions from './solutions'
 
-export const metadata = {
-  title: 'Solutions',
-  description: '',
-};
+
 
 function Page() {
   return (
     <>
-    <div>
-      
-    </div>
+     <Solutions/> 
     </>
   )
 }
