@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 export default function Course1Page() {
-  const t = useTranslations("EducationPage.courses.course1");
+  const t = useTranslations("Education.courses.course1");
 
   return (
     <main className="min-h-screen bg-[#0a0a0f] text-white selection:bg-purple-500/30 selection:text-purple-200">
