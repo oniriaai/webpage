@@ -19,6 +19,10 @@
         "backHome": "Go back home"
     },
     "LandingPage": {
+        "Metadata":{
+            "title":"Oniria Solutions | AI-powered automation", 
+            "description":"We transform businesses with artificial intelligence and automation solutions. Maximize your company's performance today."
+        },
         "title": "Automation Capabilities",
         "card1": {
             "title":"Workflow Automation",
@@ -50,7 +54,11 @@
         "button":"Schedule a Consultation"
     },
     "Contact":{
-        "title":"Contact ONIRIASOLUTIONS",
+        "Metadata":{
+            "title":"Contact", 
+            "description":""
+        },
+        "title":"Contact ONIRIA solutions",
         "description":"Tell us about the automation you want to build.",
         "sent": {
             "title":"Message sent successfully",
@@ -68,7 +76,11 @@
             "pending":"Send Message"
         }
     },
-    "EducationPage": {
+    "Education": {
+        "Metadata":{
+            "title":"Education", 
+            "description":""
+        },
         "header": "AI Learning",
         "title": "Explore AI Learning Courses",
         "description": "Enhance your skills with our curated AI courses designed for all levels.",
@@ -93,6 +105,10 @@
         }
     },
     "Solutions": {
+        "Metadata":{
+            "title":"Solutions", 
+            "description":""
+        },
         "hero": {
             "badge": "Oniria Automation Suite",
             "title": "Intelligence that flows\nacross your entire stack",

@@ -4,13 +4,27 @@ import StatsSection from "./stats-section";
 import HowItWorks from "./how-it-works";
 import { Zap, Workflow, Bot, Globe } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
 import { FeatureCards } from "./feature-cards";
 
-export const metadata = {
-  title: "Oniria Solutions | Automatización con IA",
-  description:
-    "Transformamos negocios con soluciones de Inteligencia Artificial y Automatización. Maximiza el rendimiento de tu empresa hoy.",
-};
+
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+
+  const { locale } = await params;
+  // Get the translation function for the "Metadata" namespace
+  const t = await getTranslations({ locale, namespace: 'LandingPage.Metadata' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
+
 
 export default function LandingPage() {
   const t = useTranslations("LandingPage");

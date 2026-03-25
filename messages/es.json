@@ -19,6 +19,10 @@
         "backHome": "Volver a la página de inicio"
     },
     "LandingPage": {
+        "Metadata":{
+            "title":"Oniria Solutions | Automatización con IA", 
+            "description":"Transformamos negocios con soluciones de Inteligencia Artificial y Automatización. Maximiza el rendimiento de tu empresa hoy."
+        },
         "title": "Capacidades de Automatización",
         "card1": {
             "title":"Automatización del flujo de trabajo",
@@ -50,7 +54,11 @@
         "button":"Programe una consulta"
     },
     "Contact":{
-        "title":"Póngase en contacto con ONIRIASOLUTIONS",
+        "Metadata":{
+            "title":"Contactenos", 
+            "description":""
+        },
+        "title":"Póngase en contacto con ONIRIA solutions",
         "description":"Cuéntenos sobre la automatización que desea crear.",
         "sent": {
             "title":"Mensaje enviado correctamente",
@@ -68,7 +76,11 @@
             "pending":"Enviar mensaje"
         }
     },
-    "EducationPage": {
+    "Education": {
+        "Metadata":{
+            "title":"Educación", 
+            "description":""
+        },
         "header": "Aprendizaje en IA",
         "title": "Explora Cursos de Aprendizaje en IA",
         "description": "Mejora tus habilidades con nuestros cursos de IA diseñados para todos los niveles.",
@@ -93,6 +105,10 @@
         }
     },
     "Solutions": {
+        "Metadata":{
+            "title":"Soluciones", 
+            "description":""
+        },
         "hero": {
             "badge": "Oniria Automation Suite",
             "title": "Inteligencia que fluye\npor toda tu pila tecnológica",
