@@ -6,11 +6,16 @@ import {clsx} from 'clsx';
 import {routing} from '../../i18n/routing';
 import Navbar from '@/src/components/layout/navbar';
 import Footer from '@/src/components/layout/footer';
-import { Geist, Geist_Mono, Inter } from "next/font/google"
+import { Geist, Geist_Mono, Inter, Space_Grotesk } from "next/font/google"
 import { ThemeProvider } from "../../components/theme-provider"
 import { cn } from "../../lib/utils";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'})
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-display',
+})
 
 const fontMono = Geist_Mono({
   subsets: ["latin"],
@@ -30,13 +35,14 @@ export default async function LocaleLayout({children, params}: Props) {
   }
 
   return (
-    <html lang={locale} className={cn("antialiased", fontMono.variable, "font-sans", inter.variable)} suppressHydrationWarning>
+    <html lang={locale} className={cn("antialiased dark", fontMono.variable, "font-sans", inter.variable, spaceGrotesk.variable)} suppressHydrationWarning>
     <head>
         <link rel="icon" type="image/x-icon" href="/icon.svg"></link>
+        <meta name="theme-color" content="#0a0a0f" />
     </head>
     
-      <body>
-        <ThemeProvider defaultTheme="system" enableSystem>
+      <body className="bg-[#0a0a0f] text-white">
+        <ThemeProvider defaultTheme="dark" enableSystem={false} forcedTheme="dark">
             <NextIntlClientProvider>
                 <Navbar/>
                     {children}

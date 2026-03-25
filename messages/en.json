@@ -1,6 +1,6 @@
 {
     "LocaleSwitcher": {
-        "select_language":"Enlish",
+        "select_language":"English",
         "language":{
             "en": "English",
             "es": "Spanish"
@@ -21,22 +21,23 @@
         "title": "Automation Capabilities",
         "card1": {
             "title":"Workflow Automation",
-            "description":"Connect apps and automate complex processes."
+            "description":"Design connected ecosystems that eliminate manual tasks from your daily operations."
         },
         "card2": {
             "title":"AI Agents",
-            "description":"Deploy AI assistants that handle tasks automatically."
+            "description":"Deploy autonomous bots capable of reasoning and executing complex tasks without supervision."
         },
         "card3": {
-            "title":"Real-time Integrations",
-            "description":"Sync data across your entire tech stack instantly."
+            "title":"Real-time Sync",
+            "description":"Connect your favorite tools and keep your data updated in milliseconds."
         },
         "card4": {
             "title":"Global Infrastructure",
-            "description":"Secure and scalable cloud architecture."
+            "description":"Guaranteed scalability with low latency in any region of the world."
         }
     },
     "AnimatedCard": {
+        "badge": "AI-Powered Automation",
         "title":"Intelligent Automation for Modern Businesses",
         "description":"ONIRIASOLUTIONS builds powerful automation systems that connect your tools, streamline operations, and unlock scalable growth.",
         "button1":"Start Automating",
