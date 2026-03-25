@@ -26,7 +26,7 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#0a0a0f]/80 backdrop-blur-xl border-b border-white/[0.06] shadow-xl"
+          ? "bg-[#0a0a0f]/80 backdrop-blur-xl border-b border-white/6 shadow-xl"
           : "bg-transparent"
       }`}
     >
@@ -40,7 +40,7 @@ export default function Navbar() {
             className="h-8 w-auto mr-2.5 group-hover:rotate-6 transition-transform duration-300"
             alt="ONIRIA"
           />
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
+          <span className="bg-clip-text text-transparent bg-linear-to-r from-white to-white/80">
             ONIRIA
           </span>
           <span className="text-purple-400 font-normal ml-0.5 text-sm hidden sm:inline">
@@ -69,7 +69,7 @@ export default function Navbar() {
 
           <Button
             size="sm"
-            className="rounded-full px-5 h-9 text-sm font-medium bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 text-white border-0 shadow-[0_0_20px_-4px_rgba(124,58,237,0.4)] hover:shadow-[0_0_30px_-4px_rgba(124,58,237,0.6)] transition-all duration-300 group"
+            className="rounded-full px-5 h-9 text-sm font-medium bg-linear-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 text-white border-0 shadow-[0_0_20px_-4px_rgba(124,58,237,0.4)] hover:shadow-[0_0_30px_-4px_rgba(124,58,237,0.6)] transition-all duration-300 group"
             asChild
           >
             <Link href="/contact">
@@ -91,7 +91,7 @@ export default function Navbar() {
               </button>
             </SheetTrigger>
             <SheetContent
-              className="p-6 bg-[#0d0d1a] border-white/[0.06]"
+              className="p-6 bg-[#0d0d1a] border-white/6"
               side="right"
             >
               <div className="flex flex-col gap-6 mt-10">
@@ -108,7 +108,7 @@ export default function Navbar() {
                 >
                   {t("education")}
                 </Link>
-                <Button className="rounded-full h-12 bg-gradient-to-r from-purple-600 to-violet-600 text-white font-semibold mt-4">
+                <Button className="rounded-full h-12 bg-linear-to-r from-purple-600 to-violet-600 text-white font-semibold mt-4">
                   {t("demo")}
                 </Button>
               </div>

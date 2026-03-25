@@ -48,7 +48,7 @@ export default function AnimatedCard() {
           ✨ Transformando Negocios con IA
         </motion.div>
         
-        <motion.h1 variants={itemVariants} className="text-5xl md:text-6xl font-extrabold leading-[1.1] tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
+        <motion.h1 variants={itemVariants} className="text-5xl md:text-6xl font-extrabold leading-[1.1] tracking-tight mb-6 bg-clip-text text-transparent bg-linear-to-r from-foreground to-foreground/70">
           {t('title')}
         </motion.h1>
         
@@ -75,9 +75,9 @@ export default function AnimatedCard() {
         transition={{ duration: 0.8, type: "spring", bounce: 0.3, delay: 0.3 }}
         className="relative z-10 perspective-[1000px] w-full"
       >
-        <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-secondary/30 rounded-3xl blur-2xl -z-10" />
+        <div className="absolute inset-0 bg-linear-to-tr from-primary/30 to-secondary/30 rounded-3xl blur-2xl -z-10" />
         <Card className="rounded-3xl border-white/10 bg-background/60 backdrop-blur-xl shadow-2xl overflow-hidden relative">
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-primary opacity-50"></div>
+          <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-primary via-secondary to-primary opacity-50"></div>
           <CardContent className="p-8 md:p-10">
             <div className="flex justify-between items-center mb-8">
               <h3 className="text-sm font-semibold tracking-wider text-muted-foreground uppercase">Automation Flow Example</h3>

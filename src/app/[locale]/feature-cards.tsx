@@ -46,7 +46,7 @@ export function FeatureCards({ features }: FeatureCardProps) {
       {features.map((feature, i) => (
         <motion.div key={i} variants={itemVariants} className="group h-full">
           <div
-            className="relative h-full rounded-2xl border border-white/[0.06] bg-[#12121f]/60 backdrop-blur-xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:border-white/[0.12]"
+            className="relative h-full rounded-2xl border border-white/6 bg-[#12121f]/60 backdrop-blur-xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:border-white/12"
             style={
               {
                 "--glow-color": feature.glowColor,
@@ -72,7 +72,7 @@ export function FeatureCards({ features }: FeatureCardProps) {
             <div className="relative z-10 p-7 flex flex-col h-full">
               {/* Icon */}
               <div
-                className={`w-12 h-12 rounded-xl mb-5 flex items-center justify-center bg-gradient-to-br ${feature.color} shadow-lg text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}
+                className={`w-12 h-12 rounded-xl mb-5 flex items-center justify-center bg-linear-to-br ${feature.color} shadow-lg text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}
               >
                 {feature.icon}
               </div>
@@ -83,7 +83,7 @@ export function FeatureCards({ features }: FeatureCardProps) {
               </h4>
 
               {/* Description */}
-              <p className="text-[#94a3b8] text-sm leading-relaxed flex-grow">
+              <p className="text-[#94a3b8] text-sm leading-relaxed grow">
                 {feature.description}
               </p>
 

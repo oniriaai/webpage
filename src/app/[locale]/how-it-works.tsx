@@ -44,7 +44,7 @@ export default function HowItWorks() {
       <div className="absolute inset-0 bg-[#0a0a0f]" />
 
       {/* Subtle background gradient */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-purple-600/5 rounded-full blur-[150px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-100 bg-purple-600/5 rounded-full blur-[150px]" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Section Header */}
@@ -79,7 +79,7 @@ export default function HowItWorks() {
               transition={{ delay: i * 0.1, duration: 0.5 }}
               className="group relative"
             >
-              <div className="relative p-6 md:p-7 rounded-2xl border border-white/[0.06] bg-[#12121f]/40 backdrop-blur-xl h-full transition-all duration-500 hover:border-white/[0.12]">
+              <div className="relative p-6 md:p-7 rounded-2xl border border-white/6 bg-[#12121f]/40 backdrop-blur-xl h-full transition-all duration-500 hover:border-white/12">
                 {/* Step number */}
                 <span
                   className="text-5xl font-extrabold absolute top-5 right-5 opacity-[0.06]"
@@ -109,7 +109,7 @@ export default function HowItWorks() {
 
                 {/* Connecting line (only on lg between items) */}
                 {i < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-3 w-6 h-px bg-gradient-to-r from-white/10 to-transparent" />
+                  <div className="hidden lg:block absolute top-1/2 -right-3 w-6 h-px bg-linear-to-r from-white/10 to-transparent" />
                 )}
               </div>
             </motion.div>

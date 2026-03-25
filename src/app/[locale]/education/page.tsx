@@ -21,7 +21,7 @@ export default function EducationPage() {
       color: "#7c3aed", // Purple
       href: "/education/course1", // Added navigation link
       icon: (
-        <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-purple-500 to-purple-700 shadow-lg text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+        <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-linear-to-br from-purple-500 to-purple-700 shadow-lg text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
           <Cpu className="w-6 h-6" />
         </div>
       ),
@@ -32,7 +32,7 @@ export default function EducationPage() {
       color: "#3b82f6", // Blue
       href: "/education/course2", // Added navigation link
       icon: (
-        <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-700 shadow-lg text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+        <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-linear-to-br from-blue-500 to-blue-700 shadow-lg text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
           <Code className="w-6 h-6" />
         </div>
       ),
@@ -43,7 +43,7 @@ export default function EducationPage() {
       color: "#06b6d4", // Cyan
       href: "/education/course3", // Added navigation link
       icon: (
-        <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-cyan-500 to-cyan-700 shadow-lg text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+        <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-linear-to-br from-cyan-500 to-cyan-700 shadow-lg text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
           <BarChart className="w-6 h-6" />
         </div>
       ),
@@ -54,7 +54,7 @@ export default function EducationPage() {
       color: "#10b981", // Green
       href: "/education/course4", // Added navigation link
       icon: (
-        <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-green-500 to-green-700 shadow-lg text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+        <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-linear-to-br from-green-500 to-green-700 shadow-lg text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
           <Globe className="w-6 h-6" />
         </div>
       ),
@@ -131,7 +131,7 @@ export default function EducationPage() {
                       </h4>
 
                       {/* Description */}
-                      <p className="text-[#94a3b8] text-sm leading-relaxed flex-grow">
+                      <p className="text-[#94a3b8] text-sm leading-relaxed grow">
                         {course.description}
                       </p>
 

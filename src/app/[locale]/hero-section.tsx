@@ -45,9 +45,9 @@ function FlowParticle({
 /* ───────── animated workflow SVG ───────── */
 function WorkflowAnimation() {
   return (
-    <div className="relative w-full max-w-[700px] mx-auto aspect-[16/10]">
+    <div className="relative w-full max-w-175 mx-auto aspect-16/10">
       {/* Background glow */}
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 via-blue-600/10 to-purple-600/10 rounded-3xl blur-3xl" />
+      <div className="absolute inset-0 bg-linear-to-r from-purple-600/10 via-blue-600/10 to-purple-600/10 rounded-3xl blur-3xl" />
 
       <svg
         viewBox="0 0 700 440"
@@ -457,9 +457,9 @@ export default function HeroSection() {
     <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden pt-24 pb-16">
       {/* ─── Background Effects ─── */}
       <div className="absolute inset-0 bg-[#0a0a0f]" />
-      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-purple-600/8 rounded-full blur-[120px]" />
-      <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-blue-600/8 rounded-full blur-[120px]" />
-      <div className="absolute top-1/3 right-1/3 w-[300px] h-[300px] bg-violet-500/5 rounded-full blur-[80px] animate-pulse" />
+      <div className="absolute top-0 left-1/4 w-150 h-150 bg-purple-600/8 rounded-full blur-[120px]" />
+      <div className="absolute bottom-0 right-1/4 w-125 h-125 bg-blue-600/8 rounded-full blur-[120px]" />
+      <div className="absolute top-1/3 right-1/3 w-75 h-75 bg-violet-500/5 rounded-full blur-[80px] animate-pulse" />
 
       {/* Grid pattern */}
       <div
@@ -494,7 +494,7 @@ export default function HeroSection() {
           variants={itemVariants}
           className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[1.05] tracking-tight mb-8"
         >
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-purple-300">
+          <span className="bg-clip-text text-transparent bg-linear-to-r from-white via-white to-purple-300">
             {t("title")}
           </span>
         </motion.h1>
@@ -514,7 +514,7 @@ export default function HeroSection() {
         >
           <Button
             size="lg"
-            className="rounded-full h-14 px-10 text-base font-semibold bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 text-white shadow-[0_0_40px_-8px_rgba(124,58,237,0.5)] hover:shadow-[0_0_60px_-8px_rgba(124,58,237,0.7)] transition-all duration-300 hover:scale-105 group"
+            className="rounded-full h-14 px-10 text-base font-semibold bg-linear-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 text-white shadow-[0_0_40px_-8px_rgba(124,58,237,0.5)] hover:shadow-[0_0_60px_-8px_rgba(124,58,237,0.7)] transition-all duration-300 hover:scale-105 group"
             onClick={() => router.push("/contact")}
           >
             <span className="flex items-center gap-2">
@@ -542,12 +542,12 @@ export default function HeroSection() {
           className="relative"
         >
           {/* Frame glow */}
-          <div className="absolute -inset-1 bg-gradient-to-r from-purple-600/20 via-blue-600/20 to-purple-600/20 rounded-3xl blur-xl" />
+          <div className="absolute -inset-1 bg-linear-to-r from-purple-600/20 via-blue-600/20 to-purple-600/20 rounded-3xl blur-xl" />
 
           {/* Glassmorphic container */}
           <div className="relative rounded-3xl border border-white/10 bg-[#0d0d1a]/80 backdrop-blur-xl p-6 md:p-10 shadow-2xl">
             {/* Top gradient line */}
-            <div className="absolute top-0 left-[10%] right-[10%] h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent" />
+            <div className="absolute top-0 left-[10%] right-[10%] h-px bg-linear-to-r from-transparent via-purple-500/50 to-transparent" />
 
             {/* Window controls */}
             <div className="flex items-center justify-between mb-6">
