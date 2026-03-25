@@ -8,7 +8,8 @@
     },
     "Navigation":{
         "solutions":"Solutions",
-        "contact": "Contact",
+        "education": "Education",
+        "contact":"Contact",
         "demo":"Book a Demo",
         "Footer":"Automation • AI • Integrations"
     },
@@ -65,6 +66,30 @@
         "button":{
             "sending":"Sending message...",
             "pending":"Send Message"
+        }
+    },
+    "EducationPage": {
+        "header": "AI Learning",
+        "title": "Explore AI Learning Courses",
+        "description": "Enhance your skills with our curated AI courses designed for all levels.",
+        "learnMore": "Learn More",
+        "courses": {
+            "course1": {
+                "title": "Introduction to AI",
+                "description": "Learn the basics of artificial intelligence and how to apply them."
+            },
+            "course2": {
+                "title": "Programming for AI",
+                "description": "Master the languages and tools most used in AI development."
+            },
+            "course3": {
+                "title": "Machine Learning",
+                "description": "Explore the algorithms and techniques behind machine learning."
+            },
+            "course4": {
+                "title": "AI in the Real World",
+                "description": "Discover how AI is transforming industries and solving global problems."
+            }
         }
     }
 }

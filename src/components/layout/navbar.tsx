@@ -58,10 +58,10 @@ export default function Navbar() {
               {t("solutions")}
             </Link>
             <Link
-              href="/contact"
+              href="/education"
               className="text-[#94a3b8] hover:text-white transition-colors duration-300 font-medium"
             >
-              {t("contact")}
+              {t("education")}
             </Link>
           </div>
 
@@ -103,10 +103,10 @@ export default function Navbar() {
                   {t("solutions")}
                 </Link>
                 <Link
-                  href="/contact"
+                  href="/education"
                   className="text-white/80 hover:text-white transition-colors text-lg"
                 >
-                  {t("contact")}
+                  {t("education")}
                 </Link>
                 <Button className="rounded-full h-12 bg-gradient-to-r from-purple-600 to-violet-600 text-white font-semibold mt-4">
                   {t("demo")}

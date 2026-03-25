@@ -8,7 +8,8 @@
     },
     "Navigation":{
         "solutions":"Soluciones",
-        "contact": "Contáctenos",
+        "education": "Educación",
+        "contact":"Contactenos",
         "demo":"Reserve una demostración",
         "Footer":"Automatización • IA • Integraciones"
     },
@@ -65,6 +66,30 @@
         "button":{
             "sending":"Enviando mensaje...",
             "pending":"Enviar mensaje"
+        }
+    },
+    "EducationPage": {
+        "header": "Aprendizaje en IA",
+        "title": "Explora Cursos de Aprendizaje en IA",
+        "description": "Mejora tus habilidades con nuestros cursos de IA diseñados para todos los niveles.",
+        "learnMore": "Descubrir más",
+        "courses": {
+            "course1": {
+                "title": "Introducción a la IA",
+                "description": "Aprende los conceptos básicos de la inteligencia artificial y cómo aplicarlos."
+            },
+            "course2": {
+                "title": "Programación para IA",
+                "description": "Domina los lenguajes y herramientas más utilizados en el desarrollo de IA."
+            },
+            "course3": {
+                "title": "Aprendizaje Automático",
+                "description": "Explora los algoritmos y técnicas detrás del machine learning."
+            },
+            "course4": {
+                "title": "IA en el Mundo Real",
+                "description": "Descubre cómo la IA está transformando industrias y resolviendo problemas globales."
+            }
         }
     }
 }
