@@ -32,7 +32,7 @@ function AnimatedStat({ value, suffix, label }: StatProps) {
 
   return (
     <div ref={ref} className="text-center">
-      <div className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60 mb-2">
+      <div className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-linear-to-b from-white to-white/60 mb-2">
         {displayValue}
         {suffix}
       </div>
@@ -57,8 +57,8 @@ export default function StatsSection() {
       <div className="absolute inset-0 bg-[#0a0a0f]" />
 
       {/* Divider lines */}
-      <div className="absolute top-0 left-[10%] right-[10%] h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
-      <div className="absolute bottom-0 left-[10%] right-[10%] h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
+      <div className="absolute top-0 left-[10%] right-[10%] h-px bg-linear-to-r from-transparent via-white/6 to-transparent" />
+      <div className="absolute bottom-0 left-[10%] right-[10%] h-px bg-linear-to-r from-transparent via-white/6 to-transparent" />
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}

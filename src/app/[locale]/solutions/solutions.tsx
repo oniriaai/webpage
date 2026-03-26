@@ -42,7 +42,7 @@ const iconById: Record<string, React.ElementType> = {
 
 // Optional: gradients by ID
 const gradientById: Record<string, string> = {
-  "workflow-automation": "from-purple-500 to-blue-500",
+  "workflow-automation": "from-sky-600 to-blue-500",
   "ai-agents": "from-cyan-500 to-emerald-500",
   "real-time-sync": "from-amber-500 to-orange-500",
   "global-infrastructure": "from-indigo-500 to-violet-500",
@@ -68,9 +68,9 @@ export default function Solutions() {
     <div className="relative min-h-screen w-full overflow-x-hidden bg-black text-white">
       {/* Background effects (unchanged) */}
       <div className="pointer-events-none fixed inset-0 z-0">
-        <div className="absolute -top-48 -left-48 h-160 w-160 rounded-full bg-purple-600/20 blur-[120px]" />
-        <div className="absolute top-1/3 -right-48 h-140 w-140 rounded-full bg-cyan-600/20 blur-[130px]" />
-        <div className="absolute bottom-0 left-1/3 h-120 w-120 rounded-full bg-emerald-600/15 blur-[110px]" />
+        <div className="absolute -top-48 -left-48 h-160 w-160 rounded-full bg-brand-500/20 blur-[120px]" />
+        <div className="absolute top-1/3 -right-48 h-140 w-140 rounded-full bg-brand-300/20 blur-[130px]" />
+        <div className="absolute bottom-0 left-1/3 h-120 w-120 rounded-full bg-sky-600/15 blur-[110px]" />
         <div className="absolute bottom-1/4 right-1/4 h-100 w-100 rounded-full bg-blue-600/20 blur-[100px]" />
       </div>
 
@@ -100,7 +100,7 @@ export default function Solutions() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2, type: "spring", stiffness: 200 }}
-            className="mb-6 bg-linear-to-r from-purple-400 via-cyan-400 to-emerald-400 bg-clip-text text-5xl font-bold tracking-tight text-transparent sm:text-6xl md:text-7xl whitespace-pre-line"
+            className="p-4 mb-6 bg-linear-to-r from-white to-brand-500 bg-clip-text text-5xl font-bold tracking-tight text-transparent sm:text-6xl md:text-7xl whitespace-pre-line"
           >
             {t("hero.title")}
           </motion.h1>
@@ -120,13 +120,13 @@ export default function Solutions() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mt-10 flex flex-wrap items-center justify-center gap-4"
           >
-            <Button className="group relative overflow-hidden bg-linear-to-r from-purple-600 to-blue-600 px-6 py-6 text-base font-semibold transition-all hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25">
+            <Button className="group relative overflow-hidden bg-linear-to-r from-brand-500 to-brand-800 px-6 py-6 text-base font-semibold transition-all hover:scale-105 hover:shadow-lg hover:shadow-brand-500/25">
               {t("hero.ctaPrimary")}
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button
               variant="outline"
-              className="border-white/20 bg-white/5 px-6 py-6 text-base font-semibold text-white backdrop-blur-sm transition-all hover:border-purple-400/50 hover:bg-white/10"
+              className="border-white/20 bg-white/5 px-6 py-6 text-base font-semibold text-white backdrop-blur-sm transition-all hover:border-brand-500/50 hover:bg-white/10"
             >
               {t("hero.ctaSecondary")}
             </Button>
@@ -159,7 +159,7 @@ export default function Solutions() {
           >
             {cards.map((card) => {
               const Icon = iconById[card.id];
-              const gradient = gradientById[card.id] || "from-purple-500 to-blue-500";
+              const gradient = gradientById[card.id] || "from-brand-500 to-blue-500";
 
               return (
                 <motion.div
@@ -169,7 +169,7 @@ export default function Solutions() {
                   transition={{ type: "spring", stiffness: 350, damping: 18 }}
                   className="group h-full"
                 >
-                  <Card className="relative h-full overflow-hidden border border-white/10 bg-linear-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-sm transition-all duration-300 hover:border-purple-500/40 hover:shadow-2xl hover:shadow-purple-500/10">
+                  <Card className="relative h-full overflow-hidden border border-white/10 bg-linear-to-br from-gray-900/80 to-gray-800/40 backdrop-blur-sm transition-all duration-300 hover:border-brand-500/60 hover:shadow-2xl hover:shadow-brand-500/10">
                     <div
                       className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                       style={{
@@ -178,7 +178,7 @@ export default function Solutions() {
                     />
                     <CardHeader className="relative z-10 space-y-4 pb-2">
                       <div
-                        className={`flex h-14 w-14 items-center justify-center rounded-xl bg-linear-to-br ${gradient} bg-opacity-20 shadow-lg shadow-purple-900/20`}
+                        className={`flex h-14 w-14 items-center justify-center rounded-xl bg-linear-to-br ${gradient} bg-opacity-20 shadow-lg shadow-brand-900/20`}
                       >
                         {Icon && <Icon className="h-7 w-7 text-white drop-shadow-sm" />}
                       </div>
@@ -190,7 +190,7 @@ export default function Solutions() {
                       <CardDescription className="text-base leading-relaxed text-[#94a3b8]">
                         {card.description}
                       </CardDescription>
-                      <div className="mt-6 flex items-center text-sm font-medium text-purple-300 transition-all group-hover:translate-x-1 group-hover:text-purple-200">
+                      <div className="mt-6 flex items-center text-sm font-medium text-brand-300 transition-all group-hover:translate-x-1 group-hover:text-brand-200">
                         {card.learnMore} <ArrowRight className="ml-1 h-3.5 w-3.5" />
                       </div>
                     </CardContent>
@@ -201,15 +201,15 @@ export default function Solutions() {
           </motion.div>
         </div>
 
-        {/* CTA Section (unchanged) */}
+        {/* CTA Section */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="relative mx-auto max-w-4xl rounded-2xl border border-white/10 bg-linear-to-r from-gray-900/50 to-gray-800/30 p-8 backdrop-blur-md sm:p-12"
+          className="relative mx-auto max-w-4xl rounded-2xl border border-white/10 bg-linear-to-r from-gray-900/50 to-gray-800/30 p-8  sm:p-12"
         >
-          <div className="absolute -inset-px rounded-2xl bg-linear-to-r from-purple-500/30 via-cyan-500/30 to-emerald-500/30 opacity-40 blur-md" />
+          <div className="absolute -inset-px rounded-2xl bg-linear-to-r from-brand-500/30 via-cyan-500/30 to-brand-800/30 opacity-20" />
           <div className="relative z-10 text-center">
             <h3 className="mb-4 text-3xl font-bold sm:text-4xl">
               {t("cta.title")}
@@ -217,7 +217,7 @@ export default function Solutions() {
             <p className="mx-auto mb-8 max-w-xl text-[#94a3b8]">
               {t("cta.subtitle")}
             </p>
-            <Button className="group bg-linear-to-r from-purple-600 to-cyan-600 px-8 py-6 text-base font-semibold shadow-lg shadow-purple-500/20 transition-all hover:scale-105 hover:shadow-xl">
+            <Button className="group bg-linear-to-r from-brand-500 to-brand-800 px-8 py-6 text-base text-white font-semibold shadow-xs shadow-brand-500/20 transition-all hover:scale-105 hover:shadow-xl">
               {t("cta.button")}
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>

@@ -43,7 +43,7 @@ export default function Navbar() {
           <span className="bg-clip-text text-transparent bg-linear-to-r from-white to-white/80">
             ONIRIA
           </span>
-          <span className="text-purple-400 font-normal ml-0.5 text-sm hidden sm:inline">
+          <span className="text-brand-500 font-normal ml-0.5 text-sm hidden sm:inline">
             solutions
           </span>
         </Link>
@@ -69,7 +69,7 @@ export default function Navbar() {
 
           <Button
             size="sm"
-            className="rounded-full px-5 h-9 text-sm font-medium bg-linear-to-r from-purple-600 to-violet-600 hover:from-purple-500 hover:to-violet-500 text-white border-0 shadow-[0_0_20px_-4px_rgba(124,58,237,0.4)] hover:shadow-[0_0_30px_-4px_rgba(124,58,237,0.6)] transition-all duration-300 group"
+            className="rounded-full px-5 h-9 text-sm font-medium bg-linear-to-r from-brand-500 to-brand-300 hover:from-brand-500 hover:to-brand-800 text-white border-0 shadow-[0_0_20px_-4px_rgba(124,58,237,0.4)] hover:shadow-[0_0_30px_-4px_rgba(124,58,237,0.6)] transition-all duration-300 group"
             asChild
           >
             <Link href="/contact">
@@ -108,7 +108,7 @@ export default function Navbar() {
                 >
                   {t("education")}
                 </Link>
-                <Button className="rounded-full h-12 bg-linear-to-r from-purple-600 to-violet-600 text-white font-semibold mt-4">
+                <Button className="rounded-full h-12 bg-linear-to-r from-brand-500 to-brand-800 text-white font-semibold mt-4">
                   {t("demo")}
                 </Button>
               </div>

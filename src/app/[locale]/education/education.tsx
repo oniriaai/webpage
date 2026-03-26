@@ -18,10 +18,10 @@ export default function Education() {
     {
       title: t("courses.course1.title"),
       description: t("courses.course1.description"),
-      color: "#7c3aed", // Purple
+      color: "#62a5ec", 
       href: "/education/course1", // Added navigation link
       icon: (
-        <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-linear-to-br from-purple-500 to-purple-700 shadow-lg text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+        <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-linear-to-br from-brand-500 to-brand-800 shadow-lg text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
           <Cpu className="w-6 h-6" />
         </div>
       ),
@@ -62,20 +62,20 @@ export default function Education() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#0a0a0f] text-white selection:bg-purple-500/30 selection:text-purple-200">
+    <main className="min-h-screen bg-[#0a0a0f] text-white selection:bg-brand-500/30 selection:text-brand-200">
       {/* Hero Section */}
       <section className="relative w-full py-28 overflow-hidden">
         <div className="absolute inset-0 bg-[#0a0a0f]" />
-        <div className="absolute top-0 right-1/4 w-125 h-125 bg-purple-600/5 rounded-full blur-[150px]" />
+        <div className="absolute top-0 right-1/4 w-125 h-125 bg-brand-500/5 rounded-full blur-[150px]" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-purple-500/20 bg-purple-500/5 mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-500/20 bg-brand-500/5 mb-6">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-500 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-500 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
               </span>
-              <span className="text-xs font-medium text-purple-400 uppercase tracking-wider">
+              <span className="text-xs font-medium text-brand-300 uppercase tracking-wider">
                 {t("header")}
               </span>
             </div>
@@ -136,7 +136,7 @@ export default function Education() {
                       </p>
 
                       {/* Link */}
-                      <div className="mt-6 flex items-center gap-2 text-sm font-medium text-[#94a3b8]/60 group-hover:text-purple-400 transition-colors duration-300 cursor-pointer">
+                      <div className="mt-6 flex items-center gap-2 text-sm font-medium text-brand-300/60 group-hover:text-brand-500 transition-colors duration-300 cursor-pointer">
                         <span>{t("learnMore")}</span>
                         <span className="group-hover:translate-x-1.5 transition-transform duration-300">
                           →

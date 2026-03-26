@@ -6,7 +6,7 @@ import Link from "next/link";
 function Footer() {
   const t = useTranslations("Navigation");
   return (
-    <footer className="relative bg-[#0a0a0f] border-t border-white/[0.04]">
+    <footer className="relative bg-[#0a0a0f] border-t border-white/4">
       <div className="max-w-6xl mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Logo & Tagline */}
@@ -15,7 +15,7 @@ function Footer() {
               <img src="/icon.svg" className="h-6 w-auto" alt="ONIRIA" />
               <span className="text-sm font-bold text-white/80">
                 ONIRIA
-                <span className="text-purple-400 font-normal ml-0.5 text-xs">
+                <span className="text-brand-500 font-normal ml-0.5 text-xs">
                   solutions
                 </span>
               </span>

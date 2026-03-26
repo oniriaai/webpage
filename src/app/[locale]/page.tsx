@@ -34,7 +34,7 @@ export default function LandingPage() {
       icon: <Workflow className="w-5 h-5" />,
       title: t("card1.title"),
       description: t("card1.description"),
-      color: "from-purple-600 to-violet-600",
+      color: "from-brand-800 to-sky-600",
       glowColor: "#7c3aed",
     },
     {
@@ -61,7 +61,7 @@ export default function LandingPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#0a0a0f] text-white selection:bg-purple-500/30 selection:text-purple-200">
+    <main className="min-h-screen bg-[#0a0a0f] text-white selection:bg-brand-500/30 selection:text-blue-200">
       {/* Hero Section with animated workflow */}
       <HeroSection />
 
@@ -71,17 +71,17 @@ export default function LandingPage() {
       {/* Features Section */}
       <section className="relative w-full py-28 overflow-hidden">
         <div className="absolute inset-0 bg-[#0a0a0f]" />
-        {/* Subtle purple ambient light */}
-        <div className="absolute top-0 right-1/4 w-125 h-125 bg-purple-600/5 rounded-full blur-[150px]" />
+        {/* Subtle brand color ambient light */}
+        <div className="absolute top-0 right-1/4 w-125 h-125 bg-brand-500/5 rounded-full blur-[150px]" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-purple-500/20 bg-purple-500/5 mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-500/20 bg-brand-500/5 mb-6">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-500 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-500 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-800"></span>
               </span>
-              <span className="text-xs font-medium text-purple-400 uppercase tracking-wider">
+              <span className="text-xs font-medium text-brand-300 uppercase tracking-wider">
                 ¿Por qué elegirnos?
               </span>
             </div>

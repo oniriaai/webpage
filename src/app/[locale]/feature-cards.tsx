@@ -88,7 +88,7 @@ export function FeatureCards({ features }: FeatureCardProps) {
               </p>
 
               {/* Link */}
-              <div className="mt-6 flex items-center gap-2 text-sm font-medium text-[#94a3b8]/60 group-hover:text-purple-400 transition-colors duration-300 cursor-pointer">
+              <div className="mt-6 flex items-center gap-2 text-sm font-medium text-brand-300/60 group-hover:text-brand-500 transition-colors duration-300 cursor-pointer">
                 <span>Descubrir más</span>
                 <span className="group-hover:translate-x-1.5 transition-transform duration-300">
                   →

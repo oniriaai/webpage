@@ -48,7 +48,7 @@ export default function AnimatedCard() {
           ✨ Transformando Negocios con IA
         </motion.div>
         
-        <motion.h1 variants={itemVariants} className="text-5xl md:text-6xl font-extrabold leading-[1.1] tracking-tight mb-6 bg-clip-text text-transparent bg-linear-to-r from-foreground to-foreground/70">
+        <motion.h1 variants={itemVariants} className="text-5xl md:text-6xl font-extrabold leading-[1.1] tracking-tight mb-9 bg-clip-text text-transparent bg-linear-to-r from-foreground to-foreground/70">
           {t('title')}
         </motion.h1>
         

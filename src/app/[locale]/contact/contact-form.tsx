@@ -95,7 +95,7 @@ function ContactForm() {
 
                     <Button type="submit" 
                         size="lg" 
-                        className="w-full rounded-2xl" 
+                        className="w-full rounded-2xl bg-brand-500 hover:from-brand-500 hover:to-brand-800 text-white border-0 shadow-[0_0_20px_-4px_rgba(124,58,237,0.4)] hover:shadow-[0_0_30px_-4px_rgba(124,58,237,0.6)] transition-all duration-300 group" 
                         disabled={isPending}
                         >
                         {isPending ? t('button.sending') : t('button.pending')}
