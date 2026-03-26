@@ -211,7 +211,7 @@ export default function Solutions() {
           className="relative mx-auto max-w-4xl rounded-2xl border border-white/10 bg-linear-to-r from-gray-900/50 to-gray-800/30 p-8  sm:p-12"
         >
           <div className="absolute -inset-px rounded-2xl bg-linear-to-r from-brand-500/30 via-cyan-500/30 to-brand-800/30 opacity-20" />
-          <div className="relative z-10 text-center">
+          <div className="relative z-10 text-center p-1">
             <h3 className="mb-4 text-3xl font-bold sm:text-4xl">
               {t("cta.title")}
             </h3>

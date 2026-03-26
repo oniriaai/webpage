@@ -1,23 +1,30 @@
 "use client";
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "../ui/sheet"; // ✅ Added SheetTitle
 import { Menu, ArrowRight } from "lucide-react";
 import { LocaleSwitcher } from "./locale-switcher";
-import { Dialog } from "radix-ui";
 import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
   const t = useTranslations("Navigation");
   const [scrolled, setScrolled] = useState(false);
+  const [sheetOpen, setSheetOpen] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleNavClick = (href: string) => {
+    setSheetOpen(false);
+    router.push(href);
+  };
 
   return (
     <motion.header
@@ -83,8 +90,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         <div className="md:hidden flex items-center gap-3">
-          <Sheet>
-            <Dialog.Title />
+          <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
               <button className="p-2 text-white/70 hover:text-white transition-colors">
                 <Menu className="h-5 w-5" />
@@ -94,21 +100,28 @@ export default function Navbar() {
               className="p-6 bg-[#0d0d1a] border-white/6"
               side="right"
             >
+              <SheetTitle className="sr-only">
+                Navigation Menu
+              </SheetTitle>
+
               <div className="flex flex-col gap-6 mt-10">
                 <LocaleSwitcher />
-                <Link
-                  href="/solutions"
-                  className="text-white/80 hover:text-white transition-colors text-lg"
+                <button
+                  onClick={() => handleNavClick("/solutions")}
+                  className="text-white/80 hover:text-white transition-colors text-lg text-left"
                 >
                   {t("solutions")}
-                </Link>
-                <Link
-                  href="/education"
-                  className="text-white/80 hover:text-white transition-colors text-lg"
+                </button>
+                <button
+                  onClick={() => handleNavClick("/education")}
+                  className="text-white/80 hover:text-white transition-colors text-lg text-left"
                 >
                   {t("education")}
-                </Link>
-                <Button className="rounded-full h-12 bg-linear-to-r from-brand-500 to-brand-800 text-white font-semibold mt-4">
+                </button>
+                <Button
+                  className="rounded-full h-12 bg-linear-to-r from-brand-500 to-brand-800 text-white font-semibold mt-4"
+                  onClick={() => handleNavClick("/contact")}
+                >
                   {t("demo")}
                 </Button>
               </div>

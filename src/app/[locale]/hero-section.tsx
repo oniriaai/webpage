@@ -64,8 +64,8 @@ function WorkflowAnimation() {
             </feMerge>
           </filter>
           <linearGradient id="lineGrad1" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="#7c3aed" />
-            <stop offset="100%" stopColor="#3b82f6" />
+            <stop offset="0%" stopColor="#6819f0" />
+            <stop offset="100%" stopColor="#a233f1" />
           </linearGradient>
           <linearGradient id="lineGrad2" x1="0" y1="0" x2="1" y2="1">
             <stop offset="0%" stopColor="#a855f7" />
@@ -75,8 +75,12 @@ function WorkflowAnimation() {
             <stop offset="0%" stopColor="#3b82f6" />
             <stop offset="100%" stopColor="#10b981" />
           </linearGradient>
+          <linearGradient id="lineGrad4" x1="1" y1="0" x2="1" y2="1">
+            <stop offset="0%" stopColor="#cd601d" />
+            <stop offset="100%" stopColor="#6a070a" />
+          </linearGradient>
         </defs>
-
+        
         {/* ───── Connection Lines ───── */}
         {/* WhatsApp → Hub */}
         <path
@@ -127,7 +131,7 @@ function WorkflowAnimation() {
         <path
           id="p6"
           d="M400,220 L570,220"
-          stroke="url(#lineGrad1)"
+          stroke="url(#lineGrad4)"
           strokeWidth="2"
           strokeOpacity="0.4"
           fill="none"
