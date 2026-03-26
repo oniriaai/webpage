@@ -44,7 +44,7 @@
     "AnimatedCard": {
         "badge": "AI-Powered Automation",
         "title":"Intelligent Automation for Modern Businesses",
-        "description":"ONIRIASOLUTIONS builds powerful automation systems that connect your tools, streamline operations, and unlock scalable growth.",
+        "description":"ONIRIA Solutions builds powerful automation systems that connect your tools, streamline operations, and unlock scalable growth.",
         "button1":"Start Automating",
         "button2":"See How It Works"
     },
@@ -66,7 +66,7 @@
         },
         "name": "Name",
         "email": "Email",
-        "company": "Company",
+        "company": "Company (Optional)",
         "project": {
             "title":"Project Description",
             "description":"Describe the automation you want to build"
