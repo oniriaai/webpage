@@ -526,6 +526,7 @@ export default function HeroSection() {
             size="lg"
             variant="outline"
             className="rounded-full h-14 px-10 text-base font-semibold border-white/20 text-white/90 hover:bg-white/5 hover:border-white/30 transition-all duration-300"
+            onClick={()=>{router.push("/solutions")}}
           >
             <span className="flex items-center gap-2">
               <Play className="w-4 h-4" />

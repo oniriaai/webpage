@@ -12,7 +12,14 @@ This document outlines the design principles and components used in the current 
 
 2. **Vibrant Gradients and Colors**:
    - Gradients are used extensively for backgrounds and accents.
-   - Primary colors include shades of purple, blue, cyan, and green.
+   - Primary colors include:
+      --color-brand-200: #B3D4F7;
+      --color-brand-300: #8ABEF2;
+      --color-brand-500: #62a5ec;
+      --color-brand-800: #2C5A8C;
+      --color-brand-900: #1A2F47;
+      black background
+      white text
    - Subtle glowing effects are applied to enhance the premium feel.
 
 3. **Responsive Design**:

@@ -5,7 +5,7 @@ import { Workflow, Bot, Zap, Globe, ArrowRight } from "lucide-react";
 import { Button } from "../../../components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../../components/ui/card";
 import { useTranslations } from "next-intl";
-
+import { useRouter } from "next/navigation";
 // ----------------------------------------------------------------------
 // Animation Variants (unchanged)
 // ----------------------------------------------------------------------
@@ -60,7 +60,7 @@ interface CardData {
 
 export default function Solutions() {
   const t = useTranslations("Solutions");
-
+  const router = useRouter();
   // Retrieve the cards array from translations (ensure proper typing)
   const cards = t.raw("cards") as CardData[];
 
@@ -127,6 +127,7 @@ export default function Solutions() {
             <Button
               variant="outline"
               className="border-white/20 bg-white/5 px-6 py-6 text-base font-semibold text-white backdrop-blur-sm transition-all hover:border-brand-500/50 hover:bg-white/10"
+              onClick={()=>{router.push("/contact")}}
             >
               {t("hero.ctaSecondary")}
             </Button>
@@ -217,7 +218,10 @@ export default function Solutions() {
             <p className="mx-auto mb-8 max-w-xl text-[#94a3b8]">
               {t("cta.subtitle")}
             </p>
-            <Button className="group bg-linear-to-r from-brand-500 to-brand-800 px-8 py-6 text-base text-white font-semibold shadow-xs shadow-brand-500/20 transition-all hover:scale-105 hover:shadow-xl">
+            <Button 
+            className="group bg-linear-to-r from-brand-500 to-brand-800 px-8 py-6 text-base text-white font-semibold shadow-xs shadow-brand-500/20 transition-all hover:scale-105 hover:shadow-xl"
+            onClick={()=>{router.push("/contact")}}
+            >
               {t("cta.button")}
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
