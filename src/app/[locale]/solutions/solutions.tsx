@@ -211,7 +211,7 @@ export default function Solutions() {
           className="relative mx-auto max-w-4xl rounded-2xl border border-white/10 bg-linear-to-r from-gray-900/50 to-gray-800/30 p-8  sm:p-12"
         >
           <div className="absolute -inset-px rounded-2xl bg-linear-to-r from-brand-500/30 via-cyan-500/30 to-brand-800/30 opacity-20" />
-          <div className="relative z-10 text-center p-1">
+          <div className="relative z-10 text-center overflow-hidden">
             <h3 className="mb-4 text-3xl font-bold sm:text-4xl">
               {t("cta.title")}
             </h3>
@@ -219,8 +219,8 @@ export default function Solutions() {
               {t("cta.subtitle")}
             </p>
             <Button 
-            className="group bg-linear-to-r from-brand-500 to-brand-800 px-8 py-6 text-base text-white font-semibold shadow-xs shadow-brand-500/20 transition-all hover:scale-105 hover:shadow-xl"
-            onClick={()=>{router.push("/contact")}}
+              className="group w-full sm:w-auto bg-linear-to-r from-brand-500 to-brand-800 px-4 sm:px-8 py-6 text-base text-white font-semibold shadow-xs shadow-brand-500/20 transition-all hover:scale-105 hover:shadow-xl"
+              onClick={() => router.push("/contact")}
             >
               {t("cta.button")}
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

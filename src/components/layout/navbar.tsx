@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "../ui/sheet"; // ✅ Added SheetTitle
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "../ui/sheet";
 import { Menu, ArrowRight } from "lucide-react";
 import { LocaleSwitcher } from "./locale-switcher";
 import { useTranslations } from "next-intl";
