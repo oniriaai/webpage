@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "../ui/sheet";
-import { Menu, ArrowRight } from "lucide-react";
+import { Menu, ArrowRight, Instagram } from "lucide-react";
 import { LocaleSwitcher } from "./locale-switcher";
 import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
@@ -66,11 +66,30 @@ export default function Navbar() {
             </Link>
             <Link
               href="/education"
-              className="text-[#94a3b8] hover:text-white transition-colors duration-300 font-medium"
+              className="flex items-center gap-1.5 text-[#94a3b8] hover:text-white transition-colors duration-300 font-medium"
             >
               {t("education")}
+              <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-brand-500/15 text-brand-400 leading-none">
+                Soon
+              </span>
+            </Link>
+            <Link
+              href="/contact"
+              className="text-[#94a3b8] hover:text-white transition-colors duration-300 font-medium"
+            >
+              {t("contact")}
             </Link>
           </div>
+
+          <a
+            href="https://www.instagram.com/oniriasolutions"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="text-[#94a3b8]/60 hover:text-[#E1306C] transition-colors duration-300"
+          >
+            <Instagram className="w-4 h-4" />
+          </a>
 
           <LocaleSwitcher />
 
@@ -114,10 +133,22 @@ export default function Navbar() {
                 </button>
                 <button
                   onClick={() => handleNavClick("/education")}
-                  className="text-white/80 hover:text-white transition-colors text-lg text-left"
+                  className="flex items-center gap-2 text-white/80 hover:text-white transition-colors text-lg text-left"
                 >
                   {t("education")}
+                  <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-brand-500/15 text-brand-400 leading-none">
+                    Soon
+                  </span>
                 </button>
+                <a
+                  href="https://www.instagram.com/oniriasolutions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-[#94a3b8]/80 hover:text-[#E1306C] transition-colors duration-300 text-base"
+                >
+                  <Instagram className="w-4 h-4" />
+                  @oniriasolutions
+                </a>
                 <Button
                   className="rounded-full h-12 bg-linear-to-r from-brand-500 to-brand-800 text-white font-semibold mt-4"
                   onClick={() => handleNavClick("/contact")}

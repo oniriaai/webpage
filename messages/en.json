@@ -1,155 +1,315 @@
 {
     "LocaleSwitcher": {
-        "select_language":"English",
-        "language":{
+        "select_language": "English",
+        "language": {
             "en": "English",
             "es": "Spanish"
         }
     },
-    "Navigation":{
-        "solutions":"Solutions",
+    "Navigation": {
+        "solutions": "Solutions",
         "education": "Education",
-        "contact":"Contact",
-        "demo":"Book a Demo",
-        "Footer":"Automation • AI • Integrations"
+        "contact": "Contact",
+        "demo": "Book a Demo",
+        "process": "Our Process",
+        "Footer": "Automation • AI • Integrations"
     },
-    "NotFound":{ 
+    "NotFound": {
         "title": "Page Not Found",
         "description": "Sorry, we couldn't find the page you're looking for.",
         "backHome": "Go back home"
     },
     "LandingPage": {
-        "Metadata":{
-            "title":"Oniria Solutions | AI-powered automation", 
-            "description":"We transform businesses with artificial intelligence and automation solutions. Maximize your company's performance today."
+        "Metadata": {
+            "title": "Oniria Solutions | Business Automation & AI",
+            "description": "We help businesses eliminate manual work and grow faster with custom automation systems powered by n8n and AI. Fast results, personal attention, built for your scale."
         },
-        "title": "Automation Capabilities",
+        "title": "What we can do for you",
+        "features": {
+            "badge": "Why choose us",
+            "subtitle": "We combine the right tools, genuine expertise and real partnership — so you get results that last."
+        },
         "card1": {
-            "title":"Workflow Automation",
-            "description":"Design connected ecosystems that eliminate manual tasks from your daily operations."
+            "title": "Workflow Automation",
+            "description": "We eliminate manual, repetitive tasks by designing connected flows between all your business tools."
         },
         "card2": {
-            "title":"AI Agents",
-            "description":"Deploy autonomous bots capable of reasoning and executing complex tasks without supervision."
+            "title": "AI Agents",
+            "description": "We deploy AI agents that reason, decide and act — handling tasks that used to require human attention 24/7."
         },
         "card3": {
-            "title":"Real-time Sync",
-            "description":"Connect your favorite tools and keep your data updated in milliseconds."
+            "title": "Tool Integrations",
+            "description": "We connect your CRM, email, messaging apps, databases and more — so your data flows without friction."
         },
         "card4": {
-            "title":"Global Infrastructure",
-            "description":"Guaranteed scalability with low latency in any region of the world."
-        }
+            "title": "Reliable Infrastructure",
+            "description": "All solutions are built to be maintainable, auditable and scalable — owned by you, not locked in a black box."
+        },
+        "discoverMore": "Discover more"
     },
     "AnimatedCard": {
         "badge": "AI-Powered Automation",
-        "title":"Intelligent Automation for Modern Businesses",
-        "description":"ONIRIA Solutions builds powerful automation systems that connect your tools, streamline operations, and unlock scalable growth.",
-        "button1":"Start Automating",
-        "button2":"See How It Works"
+        "title": "Your business, running smarter",
+        "description": "We build custom automation systems using n8n and AI — eliminating manual work and freeing your team to focus on what truly matters.",
+        "button1": "Let's talk",
+        "button2": "See how it works"
     },
     "Schedule": {
-        "title": "Ready to Automate Your Business?",
-        "description":"Transform repetitive workflows into intelligent automated systems.",
-        "button":"Schedule a Consultation"
+        "title": "Let's build your first automation",
+        "description": "Tell us about your business and we'll show you exactly where automation makes the biggest difference — for free.",
+        "button": "Request a free consultation"
     },
-    "Contact":{
-        "Metadata":{
-            "title":"Contact", 
-            "description":""
+    "Contact": {
+        "Metadata": {
+            "title": "Contact | Oniria Solutions",
+            "description": "Get in touch with the Oniria team. Tell us about the automation you want to build and we'll get back to you promptly."
         },
-        "title":"Contact ONIRIA solutions",
-        "description":"Tell us about the automation you want to build.",
+        "title": "Get in touch",
+        "description": "Tell us about the automation you want to build. We'll get back to you within one business day.",
         "sent": {
-            "title":"Message sent successfully",
-            "description":"Our team will get back to you shortly."
+            "title": "Message sent",
+            "description": "We'll get back to you within one business day."
         },
         "name": "Name",
         "email": "Email",
         "company": "Company (Optional)",
         "project": {
-            "title":"Project Description",
-            "description":"Describe the automation you want to build"
+            "title": "Project Description",
+            "description": "Describe the process you want to automate"
         },
-        "button":{
-            "sending":"Sending message...",
-            "pending":"Send Message"
+        "button": {
+            "sending": "Sending message...",
+            "pending": "Send Message"
         }
     },
     "Education": {
-        "Metadata":{
-            "title":"Education", 
-            "description":""
+        "Metadata": {
+            "title": "AI Learning Hub | Oniria Solutions",
+            "description": "Courses, guides and resources on automation and AI — coming soon from Oniria Solutions."
         },
-        "header": "AI Learning",
-        "title": "Explore AI Learning Courses",
-        "description": "Enhance your skills with our curated AI courses designed for all levels.",
-        "learnMore": "Learn More",
-        "courses": {
-            "course1": {
-                "title": "Introduction to AI",
-                "description": "Learn the basics of artificial intelligence and how to apply them."
-            },
-            "course2": {
-                "title": "Programming for AI",
-                "description": "Master the languages and tools most used in AI development."
-            },
-            "course3": {
-                "title": "Machine Learning",
-                "description": "Explore the algorithms and techniques behind machine learning."
-            },
-            "course4": {
-                "title": "AI in the Real World",
-                "description": "Discover how AI is transforming industries and solving global problems."
-            }
+        "comingSoon": {
+            "badge": "Coming Soon",
+            "title": "AI Learning Hub",
+            "description": "We're building a library of practical courses, guides and real-world case studies on automation and AI. Be the first to know when it's ready.",
+            "cta": "Notify me when it's ready",
+            "feature1": "Practical automation courses with n8n",
+            "feature2": "AI integration guides for non-technical teams",
+            "feature3": "Real use cases from real projects",
+            "feature4": "Resources built for SMEs and startups"
         }
     },
     "Solutions": {
-        "Metadata":{
-            "title":"Solutions", 
-            "description":""
+        "Metadata": {
+            "title": "Solutions | Oniria Solutions",
+            "description": "Explore Oniria's automation and AI solutions — workflow automation, AI agents, tool integrations and reliable infrastructure built for SMEs and startups."
         },
         "hero": {
             "badge": "Oniria Automation Suite",
             "title": "Intelligence that flows\nacross your entire stack",
-            "subtitle": "Purpose‑built solutions that combine workflow intelligence, autonomous AI, real‑time sync, and planet‑scale infrastructure.",
+            "subtitle": "Purpose-built solutions that combine workflow automation, AI agents, tool integrations and reliable infrastructure — designed for businesses that want real results.",
             "ctaPrimary": "Explore solutions",
             "ctaSecondary": "Talk to an expert"
         },
         "section": {
-            "title": "Everything you need to automate at scale",
-            "subtitle": "Modular, high‑performance solutions that adapt to your business — from real‑time data to autonomous decision‑making."
+            "title": "Everything you need to automate",
+            "subtitle": "Practical, focused solutions that adapt to your business — built with tools you own and can maintain forever."
         },
         "cards": [
             {
-            "id": "workflow-automation",
-            "title": "Workflow Automation",
-            "description": "Design connected ecosystems that eliminate manual tasks from your daily operations.",
-            "learnMore": "Learn more"
+                "id": "workflow-automation",
+                "title": "Workflow Automation",
+                "description": "We design connected flows that eliminate manual tasks across your operations — from lead intake to reporting.",
+                "learnMore": "Learn more"
             },
             {
-            "id": "ai-agents",
-            "title": "AI Agents",
-            "description": "Deploy autonomous bots capable of reasoning and executing complex tasks without supervision.",
-            "learnMore": "Learn more"
+                "id": "ai-agents",
+                "title": "AI Agents",
+                "description": "We deploy agents that classify, decide and act — handling repetitive cognitive work so your team doesn't have to.",
+                "learnMore": "Learn more"
             },
             {
-            "id": "real-time-sync",
-            "title": "Real-time Sync",
-            "description": "Connect your favorite tools and keep your data updated in milliseconds.",
-            "learnMore": "Learn more"
+                "id": "real-time-sync",
+                "title": "Tool Integrations",
+                "description": "We connect the tools you already use — CRM, email, messaging, databases — into a unified, intelligent ecosystem.",
+                "learnMore": "Learn more"
             },
             {
-            "id": "global-infrastructure",
-            "title": "Global Infrastructure",
-            "description": "Guaranteed scalability with low latency in any region of the world.",
-            "learnMore": "Learn more"
+                "id": "global-infrastructure",
+                "title": "Reliable Infrastructure",
+                "description": "Every solution is self-hosted, auditable and owned by you — no usage fees, no vendor lock-in, no surprises.",
+                "learnMore": "Learn more"
             }
         ],
         "cta": {
-            "title": "Ready to build the autonomous enterprise?",
-            "subtitle": "Join hundreds of teams that automate mission‑critical workflows with Oniria’s intelligent infrastructure.",
-            "button": "Start your automation journey"
+            "title": "Ready to start automating?",
+            "subtitle": "Tell us about your business and we'll design a solution that fits your needs and your budget.",
+            "button": "Get in touch"
         }
+    },
+    "HowItWorks": {
+        "badge": "Process",
+        "title": "How it works",
+        "subtitle": "Four focused steps to transform how your business operates",
+        "step1": {
+            "title": "We analyze your processes",
+            "description": "We map your current workflows, identify bottlenecks and design a prioritized automation roadmap tailored to your business.",
+            "button": "Learn more"
+        },
+        "step2": {
+            "title": "We connect your tools",
+            "description": "We integrate your existing apps and platforms into one connected, intelligent ecosystem — powered by n8n.",
+            "button": "Learn more"
+        },
+        "step3": {
+            "title": "We implement AI",
+            "description": "We deploy AI agents that make decisions, process data and execute tasks — without manual intervention.",
+            "button": "Learn more"
+        },
+        "step4": {
+            "title": "We scale your business",
+            "description": "We monitor performance, fix issues proactively and expand your automations as your business grows.",
+            "button": "Learn more"
+        }
+    },
+    "WhyOniria": {
+        "badge": "Why Oniria",
+        "title": "Built differently, for you",
+        "subtitle": "We are not a generic agency. We are automation specialists who work alongside you — from the first conversation to long-term results.",
+        "pillar1": {
+            "title": "n8n + AI specialists",
+            "description": "We work with proven open-source tools. No vendor lock-in, no black boxes — just reliable, maintainable solutions you own."
+        },
+        "pillar2": {
+            "title": "Direct, personal attention",
+            "description": "You work with the people building your solution. No account managers, no call centers — real collaboration from day one."
+        },
+        "pillar3": {
+            "title": "Scalable for any stage",
+            "description": "From growing startups to established companies, we design automation systems that adapt to your current scale and evolve with your goals."
+        },
+        "pillar4": {
+            "title": "Fast, tangible results",
+            "description": "Your first automation can be live in days, not months. We focus on delivering real value from day one."
+        }
+    },
+    "Process": {
+        "nav": {
+            "back": "Back to home",
+            "step": "Step",
+            "of": "of 4",
+            "previous": "Previous step",
+            "next": "Next step"
+        },
+        "cta": {
+            "title": "Ready to get started?",
+            "button": "Request a free consultation"
+        },
+        "analyze": {
+            "step": "01",
+            "badge": "Analysis & Strategy",
+            "title": "We analyze your processes",
+            "subtitle": "The first step to automating your business is understanding it deeply. We map everything — then show you exactly where automation delivers the most value.",
+            "whatTitle": "What we do",
+            "what1": "Map your current workflows end to end",
+            "what2": "Identify bottlenecks, repetitive tasks and manual handoffs",
+            "what3": "Estimate time and cost saved by automating each process",
+            "what4": "Design a prioritized automation roadmap for your business",
+            "beforeTitle": "Before Oniria",
+            "before1": "Manually copying data between platforms",
+            "before2": "Hours lost on repetitive administrative tasks",
+            "before3": "Important information slipping through the cracks",
+            "before4": "Team burnout from avoidable manual work",
+            "afterTitle": "After Oniria",
+            "after1": "Data flows automatically between your tools",
+            "after2": "Your team focuses on high-value work",
+            "after3": "Every process is tracked, auditable and reliable",
+            "after4": "Operations scale without adding headcount",
+            "deliverablesTitle": "What you receive",
+            "deliverable1": "Process audit document",
+            "deliverable2": "Automation opportunity map",
+            "deliverable3": "Estimated ROI per workflow",
+            "deliverable4": "Prioritized implementation roadmap",
+            "ctaTitle": "Request your free process audit",
+            "ctaButton": "Get my free diagnostic"
+        },
+        "connect": {
+            "step": "02",
+            "badge": "Tool Integration",
+            "title": "We connect your tools",
+            "subtitle": "We integrate all your existing apps and platforms into one connected, intelligent ecosystem — powered by n8n as the central hub.",
+            "whatTitle": "What we do",
+            "what1": "Audit the tools and platforms you already use",
+            "what2": "Design integration flows with n8n as the central hub",
+            "what3": "Build bi-directional data sync between your systems",
+            "what4": "Set up error alerts and monitoring from day one",
+            "toolsTitle": "Tools we integrate",
+            "whyN8nTitle": "Why n8n?",
+            "whyN8n": "n8n is an open-source workflow automation platform. Unlike Zapier or Make, n8n can be self-hosted — meaning your data never leaves your infrastructure, and there are no per-task usage fees. We specialize in deploying and customizing n8n for businesses at any scale.",
+            "ctaTitle": "Let's connect your stack",
+            "ctaButton": "Talk to an expert"
+        },
+        "implement": {
+            "step": "03",
+            "badge": "AI Implementation",
+            "title": "We implement AI",
+            "subtitle": "We deploy AI agents that reason, decide and act — so your team can focus on work that actually needs a human.",
+            "whatTitle": "What we do",
+            "what1": "Define the scope and decision logic of each AI agent",
+            "what2": "Connect agents to your data sources and business tools",
+            "what3": "Implement safety guardrails and human-in-the-loop checkpoints",
+            "what4": "Test, validate and fine-tune performance before going live",
+            "usecasesTitle": "Real use cases",
+            "usecase1Title": "Intelligent lead routing",
+            "usecase1Desc": "AI classifies and assigns inbound leads to the right person — automatically, based on your own criteria.",
+            "usecase2Title": "Automated customer support",
+            "usecase2Desc": "AI agents handle common queries and escalate only what genuinely needs a human.",
+            "usecase3Title": "Document processing",
+            "usecase3Desc": "Extract, classify and route data from invoices, forms and emails without touching them manually.",
+            "usecase4Title": "Content and report generation",
+            "usecase4Desc": "Generate first drafts of reports, summaries and updates tailored to your brand voice.",
+            "ctaTitle": "Ready to put AI to work in your business?",
+            "ctaButton": "Start the conversation"
+        },
+        "scale": {
+            "step": "04",
+            "badge": "Growth & Optimization",
+            "title": "We scale your business",
+            "subtitle": "Automation is not a one-time project. We monitor, optimize and expand your systems as your business grows — continuously.",
+            "whatTitle": "What we do",
+            "what1": "Monitor all automations with real-time visibility",
+            "what2": "Proactively detect and fix issues before they impact you",
+            "what3": "Expand coverage to new processes as your needs evolve",
+            "what4": "Provide regular performance reports and optimization recommendations",
+            "timelineTitle": "Your growth timeline",
+            "month1Label": "Month 1",
+            "month1Desc": "First automations live, quick wins delivered",
+            "month3Label": "Month 3",
+            "month3Desc": "Core workflows automated, team fully onboarded",
+            "month6Label": "Month 6",
+            "month6Desc": "Operations running leaner, ready to scale further",
+            "ctaTitle": "Let's build something that lasts",
+            "ctaButton": "Talk to the team",
+            "resultsTitle": "What you will gain long-term",
+            "result1Title": "Leaner operations",
+            "result1Desc": "Tasks that took hours run in seconds — freeing your team for work that genuinely needs them.",
+            "result2Title": "Clear performance data",
+            "result2Desc": "Dashboards and alerts show exactly how your automations are performing, in real time.",
+            "result3Title": "Flexible, composable systems",
+            "result3Desc": "Your automations are modular — easy to extend, audit and reshape as your business evolves.",
+            "result4Title": "Ongoing expert support",
+            "result4Desc": "We stay engaged after launch — monitoring, improving and scaling your systems alongside you."
+        }
+    },
+    "QualifySection": {
+        "badge": "Is this for you?",
+        "title": "Signs your business is ready to automate",
+        "subtitle": "These patterns show up across industries and company sizes. If any sound familiar, we should talk.",
+        "signal1": "Your team spends hours each week on tasks that follow the same manual steps every time.",
+        "signal2": "Your data lives in multiple disconnected tools — and keeping it in sync consumes real time.",
+        "signal3": "Leads, clients or partners don't get responses as fast as you would like.",
+        "signal4": "You want to grow your operation without proportionally growing your headcount.",
+        "signal5": "You lack visibility — no clear reporting on what is actually happening across your business.",
+        "signal6": "You have tried automation before, but it did not stick or was not built for your real needs.",
+        "cta": "Let's review your processes together"
     }
 }

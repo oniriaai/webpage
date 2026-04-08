@@ -1,4 +1,5 @@
 import "./globals.css"
+import type { Metadata } from "next";
 import {notFound} from 'next/navigation';
 import {Locale, hasLocale, NextIntlClientProvider} from 'next-intl';
 import {getTranslations, setRequestLocale} from 'next-intl/server';
@@ -26,6 +27,24 @@ type Props = {
   children: React.ReactNode;
   params: Promise<{locale: string}>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const isEs = locale === "es";
+  return {
+    alternates: {
+      canonical: `https://oniriasolutions.com/${locale}`,
+      languages: {
+        en: "https://oniriasolutions.com/en",
+        es: "https://oniriasolutions.com/es",
+      },
+    },
+    openGraph: {
+      locale: isEs ? "es_EC" : "en_US",
+      alternateLocale: isEs ? ["en_US"] : ["es_EC"],
+    },
+  };
+}
 
 export default async function LocaleLayout({children, params}: Props) {
   // Ensure that the incoming `locale` is valid

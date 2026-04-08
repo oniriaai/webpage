@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
+import { Link } from "../../i18n/navigation";
 
 interface FeatureCardProps {
   features: {
@@ -9,10 +11,12 @@ interface FeatureCardProps {
     description: string;
     color: string;
     glowColor: string;
+    href: string;
   }[];
 }
 
 export function FeatureCards({ features }: FeatureCardProps) {
+  const t = useTranslations("LandingPage");
   const containerVariants = {
     hidden: { opacity: 0 },
     show: {
@@ -88,12 +92,15 @@ export function FeatureCards({ features }: FeatureCardProps) {
               </p>
 
               {/* Link */}
-              <div className="mt-6 flex items-center gap-2 text-sm font-medium text-brand-300/60 group-hover:text-brand-500 transition-colors duration-300 cursor-pointer">
-                <span>Descubrir más</span>
+              <Link
+                href={feature.href}
+                className="mt-6 flex items-center gap-2 text-sm font-medium text-brand-300/60 group-hover:text-brand-500 transition-colors duration-300"
+              >
+                <span>{t("discoverMore")}</span>
                 <span className="group-hover:translate-x-1.5 transition-transform duration-300">
                   →
                 </span>
-              </div>
+              </Link>
             </div>
           </div>
         </motion.div>

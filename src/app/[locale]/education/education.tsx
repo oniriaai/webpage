@@ -1,153 +1,88 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
-import { Cpu, Code, BarChart, Globe } from "lucide-react";
-import { CSSProperties } from "react";
-import Link from "next/link";
-
-interface CustomCSSProperties extends CSSProperties {
-  "--glow-color"?: string;
-}
+import { BookOpen, ArrowRight, Clock, Cpu, FileText, Users } from "lucide-react";
+import { Link } from "../../../i18n/navigation";
 
 export default function Education() {
   const t = useTranslations("Education");
 
-  const courses = [
-    {
-      title: t("courses.course1.title"),
-      description: t("courses.course1.description"),
-      color: "#62a5ec", 
-      href: "/education/course1", // Added navigation link
-      icon: (
-        <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-linear-to-br from-brand-500 to-brand-800 shadow-lg text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-          <Cpu className="w-6 h-6" />
-        </div>
-      ),
-    },
-    {
-      title: t("courses.course2.title"),
-      description: t("courses.course2.description"),
-      color: "#3b82f6", // Blue
-      href: "/education/course2", // Added navigation link
-      icon: (
-        <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-linear-to-br from-blue-500 to-blue-700 shadow-lg text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-          <Code className="w-6 h-6" />
-        </div>
-      ),
-    },
-    {
-      title: t("courses.course3.title"),
-      description: t("courses.course3.description"),
-      color: "#06b6d4", // Cyan
-      href: "/education/course3", // Added navigation link
-      icon: (
-        <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-linear-to-br from-cyan-500 to-cyan-700 shadow-lg text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-          <BarChart className="w-6 h-6" />
-        </div>
-      ),
-    },
-    {
-      title: t("courses.course4.title"),
-      description: t("courses.course4.description"),
-      color: "#10b981", // Green
-      href: "/education/course4", // Added navigation link
-      icon: (
-        <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-linear-to-br from-green-500 to-green-700 shadow-lg text-white transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-          <Globe className="w-6 h-6" />
-        </div>
-      ),
-    },
+  const features = [
+    { icon: <Cpu className="w-4 h-4" />, text: t("comingSoon.feature1") },
+    { icon: <Users className="w-4 h-4" />, text: t("comingSoon.feature2") },
+    { icon: <FileText className="w-4 h-4" />, text: t("comingSoon.feature3") },
+    { icon: <BookOpen className="w-4 h-4" />, text: t("comingSoon.feature4") },
   ];
 
   return (
     <main className="min-h-screen bg-[#0a0a0f] text-white selection:bg-brand-500/30 selection:text-brand-200">
-      {/* Hero Section */}
-      <section className="relative w-full py-28 overflow-hidden">
+      <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background */}
         <div className="absolute inset-0 bg-[#0a0a0f]" />
-        <div className="absolute top-0 right-1/4 w-125 h-125 bg-brand-500/5 rounded-full blur-[150px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-brand-500/8 rounded-full blur-[160px]" />
+        <div className="absolute top-1/4 right-1/4 w-[300px] h-[300px] bg-blue-500/5 rounded-full blur-[120px]" />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-500/20 bg-brand-500/5 mb-6">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-500 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
-              </span>
+        {/* Grid pattern */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)",
+            backgroundSize: "48px 48px",
+          }}
+        />
+
+        <div className="relative z-10 max-w-3xl mx-auto px-6 py-32 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-500/30 bg-brand-500/8 mb-8">
+              <Clock className="w-3.5 h-3.5 text-brand-400" />
               <span className="text-xs font-medium text-brand-300 uppercase tracking-wider">
-                {t("header")}
+                {t("comingSoon.badge")}
               </span>
             </div>
-            <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-5 text-white">
-              {t("title")}
+
+            {/* Title */}
+            <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-white">
+              {t("comingSoon.title")}
             </h1>
-            <p className="text-base md:text-lg text-[#94a3b8]">
-              {t("description")}
+
+            {/* Description */}
+            <p className="text-lg md:text-xl text-[#94a3b8] leading-relaxed mb-10 max-w-2xl mx-auto">
+              {t("comingSoon.description")}
             </p>
-          </div>
 
-          {/* Courses Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {courses.map((course, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ delay: i * 0.1, duration: 0.5 }}
-                className="group relative"
-              >
-                <Link href={course.href} className="block h-full">
-                  <div
-                    className="relative p-6 md:p-7 rounded-2xl border border-white/10 bg-[#12121f]/60 backdrop-blur-xl h-full overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:border-white/20"
-                    style={{
-                      "--glow-color": course.color,
-                    } as CustomCSSProperties}
-                  >
-                    {/* Hover glow effect */}
-                    <div
-                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
-                      style={{
-                        background: `radial-gradient(400px circle at var(--mouse-x, 50%) var(--mouse-y, 30%), var(--glow-color)15, transparent 60%)`,
-                      }}
-                    />
+            {/* Feature list */}
+            <div className="grid sm:grid-cols-2 gap-3 mb-12 text-left max-w-xl mx-auto">
+              {features.map((f, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.3 + i * 0.1, duration: 0.4 }}
+                  className="flex items-start gap-3 p-4 rounded-xl border border-white/6 bg-[#12121f]/40"
+                >
+                  <span className="mt-0.5 text-brand-400 flex-shrink-0">{f.icon}</span>
+                  <span className="text-sm text-[#94a3b8] leading-snug">{f.text}</span>
+                </motion.div>
+              ))}
+            </div>
 
-                    {/* Top accent line */}
-                    <div
-                      className="absolute top-0 left-0 right-0 h-px opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                      style={{
-                        background: `linear-gradient(to right, transparent, var(--glow-color)60, transparent)`,
-                      }}
-                    />
-
-                    <div className="relative z-10 flex flex-col h-full">
-                      {/* Icon */}
-                      <div className="mb-5">{course.icon}</div>
-
-                      {/* Title */}
-                      <h4 className="text-lg font-bold mb-3 tracking-tight text-white group-hover:text-white transition-colors">
-                        {course.title}
-                      </h4>
-
-                      {/* Description */}
-                      <p className="text-[#94a3b8] text-sm leading-relaxed grow">
-                        {course.description}
-                      </p>
-
-                      {/* Link */}
-                      <div className="mt-6 flex items-center gap-2 text-sm font-medium text-brand-300/60 group-hover:text-brand-500 transition-colors duration-300 cursor-pointer">
-                        <span>{t("learnMore")}</span>
-                        <span className="group-hover:translate-x-1.5 transition-transform duration-300">
-                          →
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
+            {/* CTA */}
+            <Link
+              href="/contact"
+              className="group inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold text-white bg-linear-to-r from-brand-500 to-brand-800 shadow-lg shadow-brand-500/20 hover:shadow-brand-500/40 hover:scale-105 transition-all duration-300"
+            >
+              {t("comingSoon.cta")}
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </motion.div>
         </div>
       </section>
     </main>

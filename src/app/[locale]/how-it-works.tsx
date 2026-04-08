@@ -1,49 +1,55 @@
-"use client";
+﻿"use client";
 import React from "react";
 import { motion } from "motion/react";
-import { Settings, Zap, BarChart3, Rocket } from "lucide-react";
-
-const steps = [
-  {
-    number: "01",
-    icon: <Settings className="w-6 h-6" />,
-    title: "Analice sus procesos",
-    description:
-      "Identificamos los flujos de trabajo repetitivos en su negocio y diseñamos una estrategia de automatización personalizada.",
-    color: "#7c3aed",
-  },
-  {
-    number: "02",
-    icon: <Zap className="w-6 h-6" />,
-    title: "Conectamos sus herramientas",
-    description:
-      "Integramos todas sus aplicaciones y plataformas existentes para crear un ecosistema conectado e inteligente.",
-    color: "#3b82f6",
-  },
-  {
-    number: "03",
-    icon: <BarChart3 className="w-6 h-6" />,
-    title: "Implementamos IA",
-    description:
-      "Desplegamos agentes de IA que toman decisiones, procesan datos y ejecutan tareas sin intervención manual.",
-    color: "#06b6d4",
-  },
-  {
-    number: "04",
-    icon: <Rocket className="w-6 h-6" />,
-    title: "Escale su negocio",
-    description:
-      "Monitoree resultados en tiempo real y escale sus automatizaciones para un crecimiento continuo y exponencial.",
-    color: "#10b981",
-  },
-];
+import { Settings, Zap, BarChart3, Rocket, ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link } from "../../i18n/navigation";
 
 export default function HowItWorks() {
+  const t = useTranslations("HowItWorks");
+
+  const steps = [
+    {
+      number: "01",
+      icon: <Settings className="w-6 h-6" />,
+      title: t("step1.title"),
+      description: t("step1.description"),
+      button: t("step1.button"),
+      href: "/process/analyze",
+      color: "#7c3aed",
+    },
+    {
+      number: "02",
+      icon: <Zap className="w-6 h-6" />,
+      title: t("step2.title"),
+      description: t("step2.description"),
+      button: t("step2.button"),
+      href: "/process/connect",
+      color: "#3b82f6",
+    },
+    {
+      number: "03",
+      icon: <BarChart3 className="w-6 h-6" />,
+      title: t("step3.title"),
+      description: t("step3.description"),
+      button: t("step3.button"),
+      href: "/process/implement",
+      color: "#06b6d4",
+    },
+    {
+      number: "04",
+      icon: <Rocket className="w-6 h-6" />,
+      title: t("step4.title"),
+      description: t("step4.description"),
+      button: t("step4.button"),
+      href: "/process/scale",
+      color: "#10b981",
+    },
+  ];
+
   return (
     <section className="relative w-full py-28 overflow-hidden">
       <div className="absolute inset-0 bg-[#0a0a0f]" />
-
-      {/* Subtle background gradient */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-100 bg-purple-600/5 rounded-full blur-[150px]" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
@@ -57,14 +63,14 @@ export default function HowItWorks() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-blue-500/20 bg-blue-500/5 mb-6">
             <span className="text-xs font-medium text-blue-400 uppercase tracking-wider">
-              Proceso
+              {t("badge")}
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
-            Cómo funciona
+            {t("title")}
           </h2>
           <p className="text-[#94a3b8] text-base md:text-lg max-w-2xl mx-auto">
-            En cuatro simples pasos, transformamos la operación de su negocio
+            {t("subtitle")}
           </p>
         </motion.div>
 
@@ -79,7 +85,7 @@ export default function HowItWorks() {
               transition={{ delay: i * 0.1, duration: 0.5 }}
               className="group relative"
             >
-              <div className="relative p-6 md:p-7 rounded-2xl border border-white/6 bg-[#12121f]/40 backdrop-blur-xl h-full transition-all duration-500 hover:border-white/12">
+              <div className="relative p-6 md:p-7 rounded-2xl border border-white/6 bg-[#12121f]/40 backdrop-blur-xl h-full flex flex-col transition-all duration-500 hover:border-white/12">
                 {/* Step number */}
                 <span
                   className="text-5xl font-extrabold absolute top-5 right-5 opacity-[0.06]"
@@ -103,9 +109,19 @@ export default function HowItWorks() {
                 <h4 className="text-base font-bold text-white mb-3 tracking-tight">
                   {step.title}
                 </h4>
-                <p className="text-sm text-[#94a3b8] leading-relaxed">
+                <p className="text-sm text-[#94a3b8] leading-relaxed grow">
                   {step.description}
                 </p>
+
+                {/* Learn more link */}
+                <Link
+                  href={step.href}
+                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium transition-colors duration-200"
+                  style={{ color: step.color }}
+                >
+                  {step.button}
+                  <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+                </Link>
 
                 {/* Connecting line (only on lg between items) */}
                 {i < steps.length - 1 && (

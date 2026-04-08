@@ -1,155 +1,315 @@
 {
     "LocaleSwitcher": {
-        "select_language":"Español",
-        "language":{
+        "select_language": "Español",
+        "language": {
             "en": "Inglés",
             "es": "Español"
         }
     },
-    "Navigation":{
-        "solutions":"Soluciones",
+    "Navigation": {
+        "solutions": "Soluciones",
         "education": "Educación",
-        "contact":"Contactenos",
-        "demo":"Reserve una demostración",
-        "Footer":"Automatización • IA • Integraciones"
+        "contact": "Contáctenos",
+        "demo": "Reserve una demo",
+        "process": "Nuestro proceso",
+        "Footer": "Automatización • IA • Integraciones"
     },
-    "NotFound":{ 
+    "NotFound": {
         "title": "Página no encontrada",
-        "description": "Lo sentimos, no hemos podido encontrar la página que busca",
-        "backHome": "Volver a la página de inicio"
+        "description": "Lo sentimos, no hemos podido encontrar la página que busca.",
+        "backHome": "Volver al inicio"
     },
     "LandingPage": {
-        "Metadata":{
-            "title":"Oniria Solutions | Automatización con IA", 
-            "description":"Transformamos negocios con soluciones de Inteligencia Artificial y Automatización. Maximiza el rendimiento de tu empresa hoy."
+        "Metadata": {
+            "title": "Oniria Solutions | Automatización e IA para empresas",
+            "description": "Ayudamos a empresas a eliminar el trabajo manual y crecer más rápido con sistemas de automatización personalizados con n8n e IA. Resultados rápidos, atención personal, a tu escala."
         },
-        "title": "Capacidades de Automatización",
+        "title": "Lo que podemos hacer por ti",
+        "features": {
+            "badge": "Por qué elegirnos",
+            "subtitle": "Combinamos las herramientas correctas, experiencia genuina y una asociación real — para que obtengas resultados que duran."
+        },
         "card1": {
-            "title":"Automatización del flujo de trabajo",
-            "description":"Diseñe ecosistemas conectados que eliminan las tareas manuales de su día a día."
+            "title": "Automatización de procesos",
+            "description": "Eliminamos tareas manuales y repetitivas diseñando flujos conectados entre todas las herramientas de tu negocio."
         },
         "card2": {
-            "title":"Agentes de IA",
-            "description":"Despliegue bots autónomos capaces de razonar y ejecutar tareas complejas sin supervisión."
+            "title": "Agentes de IA",
+            "description": "Desplegamos agentes de IA que razonan, deciden y actúan — manejando tareas que antes requerían atención humana las 24 horas."
         },
         "card3": {
-            "title":"Sincronización en tiempo real",
-            "description":"Conecte sus herramientas favoritas y mantenga sus datos actualizados en milisegundos."
+            "title": "Integraciones de herramientas",
+            "description": "Conectamos tu CRM, correo, apps de mensajería, bases de datos y más — para que tus datos fluyan sin fricción."
         },
         "card4": {
-            "title":"Infraestructura global",
-            "description":"Escalabilidad garantizada con baja latencia en cualquier región del mundo."
-        }
+            "title": "Infraestructura confiable",
+            "description": "Todas las soluciones son mantenibles, auditables y escalables — tuyas, no encerradas en una caja negra."
+        },
+        "discoverMore": "Descubrir más"
     },
     "AnimatedCard": {
         "badge": "Automatización con IA",
-        "title":"Automatización inteligente para empresas modernas",
-        "description":"ONIRIA Solutions crea potentes sistemas de automatización que conectan sus herramientas, optimizan las operaciones y permiten un crecimiento escalable.",
-        "button1":"Comience a automatizar",
-        "button2":"Vea cómo funciona"
+        "title": "Tu negocio, funcionando de forma más inteligente",
+        "description": "Construimos sistemas de automatización personalizados con n8n e IA — eliminando el trabajo manual y liberando a tu equipo para enfocarse en lo que realmente importa.",
+        "button1": "Hablemos",
+        "button2": "Ver cómo funciona"
     },
     "Schedule": {
-        "title": "¿Listo para automatizar su negocio?",
-        "description":"Transforme los flujos de trabajo repetitivos en sistemas automatizados inteligentes.",
-        "button":"Programe una consulta"
+        "title": "Construyamos tu primera automatización",
+        "description": "Cuéntanos sobre tu negocio y te mostraremos exactamente dónde la automatización hace la mayor diferencia — gratis.",
+        "button": "Solicitar una consulta gratuita"
     },
-    "Contact":{
-        "Metadata":{
-            "title":"Contactenos", 
-            "description":""
+    "Contact": {
+        "Metadata": {
+            "title": "Contacto | Oniria Solutions",
+            "description": "Ponte en contacto con el equipo de Oniria. Cuéntanos sobre la automatización que quieres construir y te respondemos en menos de un día hábil."
         },
-        "title":"Póngase en contacto con ONIRIA solutions",
-        "description":"Cuéntenos sobre la automatización que desea crear.",
+        "title": "Ponte en contacto",
+        "description": "Cuéntanos sobre la automatización que quieres construir. Te respondemos en menos de un día hábil.",
         "sent": {
-            "title":"Mensaje enviado correctamente",
-            "description":"Nuestro equipo se pondrá en contacto con usted en breve."
+            "title": "Mensaje enviado",
+            "description": "Te responderemos en menos de un día hábil."
         },
         "name": "Nombre",
         "email": "Email",
-        "company": "Compañia (Opcional)",
+        "company": "Empresa (Opcional)",
         "project": {
-            "title":"Descripción del proyecto",
-            "description":"Describa la automatización que desea crear."
+            "title": "Descripción del proyecto",
+            "description": "Describe el proceso que quieres automatizar"
         },
-        "button":{
-            "sending":"Enviando mensaje...",
-            "pending":"Enviar mensaje"
+        "button": {
+            "sending": "Enviando mensaje...",
+            "pending": "Enviar mensaje"
         }
     },
     "Education": {
-        "Metadata":{
-            "title":"Educación", 
-            "description":""
+        "Metadata": {
+            "title": "AI Learning Hub | Oniria Solutions",
+            "description": "Cursos, guías y recursos sobre automatización e IA — próximamente de Oniria Solutions."
         },
-        "header": "Aprendizaje en IA",
-        "title": "Explora Cursos de Aprendizaje en IA",
-        "description": "Mejora tus habilidades con nuestros cursos de IA diseñados para todos los niveles.",
-        "learnMore": "Descubrir más",
-        "courses": {
-            "course1": {
-                "title": "Introducción a la IA",
-                "description": "Aprende los conceptos básicos de la inteligencia artificial y cómo aplicarlos."
-            },
-            "course2": {
-                "title": "Programación para IA",
-                "description": "Domina los lenguajes y herramientas más utilizados en el desarrollo de IA."
-            },
-            "course3": {
-                "title": "Aprendizaje Automático",
-                "description": "Explora los algoritmos y técnicas detrás del machine learning."
-            },
-            "course4": {
-                "title": "IA en el Mundo Real",
-                "description": "Descubre cómo la IA está transformando industrias y resolviendo problemas globales."
-            }
+        "comingSoon": {
+            "badge": "Próximamente",
+            "title": "AI Learning Hub",
+            "description": "Estamos construyendo una biblioteca de cursos prácticos, guías y casos de uso reales sobre automatización e IA. Sé el primero en enterarte cuando esté listo.",
+            "cta": "Avisarme cuando esté disponible",
+            "feature1": "Cursos prácticos de automatización con n8n",
+            "feature2": "Guías de integración de IA para equipos no técnicos",
+            "feature3": "Casos de uso reales de proyectos reales",
+            "feature4": "Recursos para PYMES y startups"
         }
     },
     "Solutions": {
-        "Metadata":{
-            "title":"Soluciones", 
-            "description":""
+        "Metadata": {
+            "title": "Soluciones | Oniria Solutions",
+            "description": "Explora las soluciones de automatización e IA de Oniria — automatización de flujos, agentes de IA, integraciones y infraestructura confiable para PYMES y startups."
         },
         "hero": {
             "badge": "Oniria Automation Suite",
-            "title": "Inteligencia que fluye\npor toda tu pila tecnológica",
-            "subtitle": "Soluciones diseñadas específicamente que combinan inteligencia de flujos de trabajo, IA autónoma, sincronización en tiempo real e infraestructura a escala planetaria.",
+            "title": "Inteligencia que fluye\npor toda tu operación",
+            "subtitle": "Soluciones diseñadas específicamente que combinan automatización de flujos, agentes de IA, integraciones de herramientas e infraestructura confiable — para empresas que quieren resultados reales.",
             "ctaPrimary": "Explorar soluciones",
             "ctaSecondary": "Hablar con un experto"
         },
         "section": {
-            "title": "Todo lo que necesitas para automatizar a escala",
-            "subtitle": "Soluciones modulares y de alto rendimiento que se adaptan a tu negocio — desde datos en tiempo real hasta toma de decisiones autónoma."
+            "title": "Todo lo que necesitas para automatizar",
+            "subtitle": "Soluciones prácticas y enfocadas que se adaptan a tu negocio — construidas con herramientas que tú posees y puedes mantener para siempre."
         },
         "cards": [
-        {
-            "id": "workflow-automation",
-            "title": "Automatización de flujos de trabajo",
-            "description": "Diseña ecosistemas conectados que eliminan tareas manuales de tus operaciones diarias.",
-            "learnMore": "Más información"
-        },
-        {
-            "id": "ai-agents",
-            "title": "Agentes de IA",
-            "description": "Implementa bots autónomos capaces de razonar y ejecutar tareas complejas sin supervisión.",
-            "learnMore": "Más información"
-        },
-        {
-            "id": "real-time-sync",
-            "title": "Sincronización en tiempo real",
-            "description": "Conecta tus herramientas favoritas y mantén tus datos actualizados en milisegundos.",
-            "learnMore": "Más información"
-        },
-        {
-            "id": "global-infrastructure",
-            "title": "Infraestructura global",
-            "description": "Escalabilidad garantizada con baja latencia en cualquier región del mundo.",
-            "learnMore": "Más información"
-        }
+            {
+                "id": "workflow-automation",
+                "title": "Automatización de procesos",
+                "description": "Diseñamos flujos conectados que eliminan tareas manuales en tus operaciones — desde la captación de leads hasta los reportes.",
+                "learnMore": "Saber más"
+            },
+            {
+                "id": "ai-agents",
+                "title": "Agentes de IA",
+                "description": "Desplegamos agentes que clasifican, deciden y actúan — manejando trabajo cognitivo repetitivo para que tu equipo no tenga que hacerlo.",
+                "learnMore": "Saber más"
+            },
+            {
+                "id": "real-time-sync",
+                "title": "Integraciones de herramientas",
+                "description": "Conectamos las herramientas que ya usas — CRM, correo, mensajería, bases de datos — en un ecosistema unificado e inteligente.",
+                "learnMore": "Saber más"
+            },
+            {
+                "id": "global-infrastructure",
+                "title": "Infraestructura confiable",
+                "description": "Cada solución es autohospedada, auditable y tuya — sin tarifas por uso, sin dependencia de proveedores, sin sorpresas.",
+                "learnMore": "Saber más"
+            }
         ],
         "cta": {
-            "title": "¿Listo para construir la empresa autónoma?",
-            "subtitle": "Únete a cientos de equipos que automatizan flujos de trabajo críticos con la infraestructura inteligente de Oniria.",
-            "button": "Comienza tu viaje hacia la automatización"
+            "title": "¿Listo para empezar a automatizar?",
+            "subtitle": "Cuéntanos sobre tu negocio y diseñaremos una solución que se ajuste a tus necesidades y tu presupuesto.",
+            "button": "Contáctanos"
         }
+    },
+    "HowItWorks": {
+        "badge": "Proceso",
+        "title": "Cómo funciona",
+        "subtitle": "Cuatro pasos enfocados para transformar cómo opera tu negocio",
+        "step1": {
+            "title": "Analizamos tus procesos",
+            "description": "Mapeamos tus flujos actuales, identificamos cuellos de botella y diseñamos una hoja de ruta de automatización priorizada para tu negocio.",
+            "button": "Saber más"
+        },
+        "step2": {
+            "title": "Conectamos tus herramientas",
+            "description": "Integramos tus apps y plataformas existentes en un ecosistema conectado e inteligente — impulsado por n8n.",
+            "button": "Saber más"
+        },
+        "step3": {
+            "title": "Implementamos IA",
+            "description": "Desplegamos agentes de IA que toman decisiones, procesan datos y ejecutan tareas — sin intervención manual.",
+            "button": "Saber más"
+        },
+        "step4": {
+            "title": "Escalamos tu negocio",
+            "description": "Monitoreamos el rendimiento, resolvemos problemas proactivamente y expandimos tus automatizaciones a medida que tu negocio crece.",
+            "button": "Saber más"
+        }
+    },
+    "WhyOniria": {
+        "badge": "Por qué Oniria",
+        "title": "Construido diferente, para ti",
+        "subtitle": "No somos una agencia genérica. Somos especialistas en automatización que trabajamos a tu lado — desde la primera conversación hasta los resultados a largo plazo.",
+        "pillar1": {
+            "title": "Especialistas en n8n + IA",
+            "description": "Trabajamos con herramientas open-source probadas. Sin dependencia de proveedores, sin cajas negras — solo soluciones confiables y mantenibles que tú posees."
+        },
+        "pillar2": {
+            "title": "Atención directa y personal",
+            "description": "Trabajas con las personas que construyen tu solución. Sin gestores de cuenta, sin call centers — colaboración real desde el primer día."
+        },
+        "pillar3": {
+            "title": "Escalable para cualquier etapa",
+            "description": "Desde startups en crecimiento hasta empresas consolidadas, diseñamos sistemas de automatización que se adaptan a tu escala actual y evolucionan con tus objetivos."
+        },
+        "pillar4": {
+            "title": "Resultados rápidos y tangibles",
+            "description": "Tu primera automatización puede estar en producción en días, no meses. Nos enfocamos en entregar valor real desde el primer día."
+        }
+    },
+    "Process": {
+        "nav": {
+            "back": "Volver al inicio",
+            "step": "Paso",
+            "of": "de 4",
+            "previous": "Paso anterior",
+            "next": "Siguiente paso"
+        },
+        "cta": {
+            "title": "¿Listo para empezar?",
+            "button": "Solicitar una consulta gratuita"
+        },
+        "analyze": {
+            "step": "01",
+            "badge": "Análisis y estrategia",
+            "title": "Analizamos tus procesos",
+            "subtitle": "El primer paso para automatizar tu negocio es entenderlo en profundidad. Mapeamos todo — y te mostramos exactamente dónde la automatización entrega más valor.",
+            "whatTitle": "Qué hacemos",
+            "what1": "Mapeamos tus flujos de trabajo de extremo a extremo",
+            "what2": "Identificamos cuellos de botella, tareas repetitivas y transferencias manuales",
+            "what3": "Estimamos el tiempo y costo ahorrado al automatizar cada proceso",
+            "what4": "Diseñamos una hoja de ruta de automatización priorizada para tu negocio",
+            "beforeTitle": "Antes de Oniria",
+            "before1": "Copiar datos manualmente entre plataformas",
+            "before2": "Horas perdidas en tareas administrativas repetitivas",
+            "before3": "Información importante que se pierde entre las grietas",
+            "before4": "Agotamiento del equipo por trabajo manual evitable",
+            "afterTitle": "Después de Oniria",
+            "after1": "Los datos fluyen automáticamente entre tus herramientas",
+            "after2": "Tu equipo se enfoca en trabajo de alto valor",
+            "after3": "Cada proceso es rastreable, auditable y confiable",
+            "after4": "Las operaciones escalan sin agregar personal",
+            "deliverablesTitle": "Lo que recibes",
+            "deliverable1": "Documento de auditoría de procesos",
+            "deliverable2": "Mapa de oportunidades de automatización",
+            "deliverable3": "ROI estimado por flujo de trabajo",
+            "deliverable4": "Hoja de ruta de implementación priorizada",
+            "ctaTitle": "Solicita tu auditoría de procesos gratuita",
+            "ctaButton": "Obtener mi diagnóstico gratuito"
+        },
+        "connect": {
+            "step": "02",
+            "badge": "Integración de herramientas",
+            "title": "Conectamos tus herramientas",
+            "subtitle": "Integramos todas tus apps y plataformas existentes en un ecosistema conectado e inteligente — con n8n como el hub central.",
+            "whatTitle": "Qué hacemos",
+            "what1": "Auditamos las herramientas y plataformas que ya usas",
+            "what2": "Diseñamos flujos de integración con n8n como hub central",
+            "what3": "Construimos sincronización bidireccional de datos entre tus sistemas",
+            "what4": "Configuramos alertas de error y monitoreo desde el primer día",
+            "toolsTitle": "Herramientas que integramos",
+            "whyN8nTitle": "¿Por qué n8n?",
+            "whyN8n": "n8n es una plataforma de automatización de flujos de trabajo open-source. A diferencia de Zapier o Make, n8n puede ser autohospedado — lo que significa que tus datos nunca salen de tu infraestructura, y no hay tarifas por tarea. Somos especialistas en desplegar y personalizar n8n para empresas de cualquier tamaño.",
+            "ctaTitle": "Conectemos tu stack tecnológico",
+            "ctaButton": "Hablar con un experto"
+        },
+        "implement": {
+            "step": "03",
+            "badge": "Implementación de IA",
+            "title": "Implementamos IA",
+            "subtitle": "Desplegamos agentes de IA que razonan, deciden y actúan — para que tu equipo pueda enfocarse en el trabajo que realmente necesita un humano.",
+            "whatTitle": "Qué hacemos",
+            "what1": "Definimos el alcance y la lógica de decisión de cada agente de IA",
+            "what2": "Conectamos los agentes a tus fuentes de datos y herramientas de negocio",
+            "what3": "Implementamos salvaguardas y puntos de control humano",
+            "what4": "Probamos, validamos y ajustamos el rendimiento antes de salir en vivo",
+            "usecasesTitle": "Casos de uso reales",
+            "usecase1Title": "Enrutamiento inteligente de leads",
+            "usecase1Desc": "La IA clasifica y asigna los leads entrantes a la persona correcta — automáticamente, según tus propios criterios.",
+            "usecase2Title": "Soporte al cliente automatizado",
+            "usecase2Desc": "Los agentes de IA manejan consultas comunes y escalan solo lo que genuinamente necesita un humano.",
+            "usecase3Title": "Procesamiento de documentos",
+            "usecase3Desc": "Extrae, clasifica y enruta datos de facturas, formularios y correos sin tocarlos manualmente.",
+            "usecase4Title": "Generación de contenido y reportes",
+            "usecase4Desc": "Genera primeros borradores de reportes, resúmenes y actualizaciones adaptados a la voz de tu marca.",
+            "ctaTitle": "¿Listo para poner la IA a trabajar en tu negocio?",
+            "ctaButton": "Iniciar la conversación"
+        },
+        "scale": {
+            "step": "04",
+            "badge": "Crecimiento y optimización",
+            "title": "Escalamos tu negocio",
+            "subtitle": "La automatización no es un proyecto de una sola vez. Monitoreamos, optimizamos y expandimos tus sistemas a medida que tu negocio crece — continuamente.",
+            "whatTitle": "Qué hacemos",
+            "what1": "Monitoreamos todas las automatizaciones con visibilidad en tiempo real",
+            "what2": "Detectamos y solucionamos problemas antes de que te afecten",
+            "what3": "Expandimos la cobertura a nuevos procesos a medida que evolucionan tus necesidades",
+            "what4": "Proporcionamos reportes regulares de rendimiento y recomendaciones de optimización",
+            "timelineTitle": "Tu línea de tiempo de crecimiento",
+            "month1Label": "Mes 1",
+            "month1Desc": "Primeras automatizaciones en producción, victorias rápidas entregadas",
+            "month3Label": "Mes 3",
+            "month3Desc": "Flujos principales automatizados, equipo completamente integrado",
+            "month6Label": "Mes 6",
+            "month6Desc": "Operaciones más eficientes, listo para seguir escalando",
+            "ctaTitle": "Construyamos algo que dure",
+            "ctaButton": "Hablar con el equipo",
+            "resultsTitle": "Lo que ganarás a largo plazo",
+            "result1Title": "Operaciones más eficientes",
+            "result1Desc": "Las tareas que tomaban horas se ejecutan en segundos — liberando a tu equipo para el trabajo que realmente necesita.",
+            "result2Title": "Datos de rendimiento claros",
+            "result2Desc": "Paneles y alertas que muestran exactamente cómo rinden tus automatizaciones, en tiempo real.",
+            "result3Title": "Sistemas flexibles y modulares",
+            "result3Desc": "Tus automatizaciones son modulares — fáciles de extender, auditar y adaptar a medida que tu negocio evoluciona.",
+            "result4Title": "Soporte experto continuo",
+            "result4Desc": "Seguimos comprometidos después del lanzamiento — monitoreando, mejorando y escalando tus sistemas junto a ti."
+        }
+    },
+    "QualifySection": {
+        "badge": "¿Es para ti?",
+        "title": "Señales de que tu negocio está listo para automatizar",
+        "subtitle": "Estos patrones aparecen en empresas de todos los tamaños e industrias. Si alguno te suena familiar, tenemos que hablar.",
+        "signal1": "Tu equipo pasa horas cada semana en tareas que siguen los mismos pasos manuales una y otra vez.",
+        "signal2": "Tus datos viven en múltiples herramientas desconectadas — y sincronizarlos consume tiempo real.",
+        "signal3": "Los leads, clientes o socios no reciben respuestas tan rápido como quisieras.",
+        "signal4": "Quieres hacer crecer tu operación sin aumentar proporcionalmente tu equipo.",
+        "signal5": "Te falta visibilidad — no hay reportes claros sobre lo que está pasando en tu negocio.",
+        "signal6": "Lo intentaste con automatización antes, pero no funcionó o no fue construida para tus necesidades reales.",
+        "cta": "Revisemos tus procesos juntos"
     }
 }

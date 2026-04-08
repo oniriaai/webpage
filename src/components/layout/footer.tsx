@@ -2,6 +2,7 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { Instagram } from "lucide-react";
 
 function Footer() {
   const t = useTranslations("Navigation");
@@ -32,6 +33,12 @@ function Footer() {
               {t("solutions")}
             </Link>
             <Link
+              href="/process/analyze"
+              className="text-[#94a3b8]/60 hover:text-white/80 transition-colors duration-300"
+            >
+              {t("process")}
+            </Link>
+            <Link
               href="/contact"
               className="text-[#94a3b8]/60 hover:text-white/80 transition-colors duration-300"
             >
@@ -39,10 +46,21 @@ function Footer() {
             </Link>
           </div>
 
-          {/* Copyright */}
-          <p className="text-xs text-[#94a3b8]/40">
-            © {new Date().getFullYear()} ONIRIASOLUTIONS
-          </p>
+          {/* Social + Copyright */}
+          <div className="flex items-center gap-4">
+            <a
+              href="https://www.instagram.com/oniriasolutions"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram @oniriasolutions"
+              className="text-[#94a3b8]/40 hover:text-[#E1306C] transition-colors duration-300"
+            >
+              <Instagram className="w-4 h-4" />
+            </a>
+            <p className="text-xs text-[#94a3b8]/40">
+              © {new Date().getFullYear()} ONIRIASOLUTIONS
+            </p>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,7 +1,8 @@
-import HeroSection from "./hero-section";
+﻿import HeroSection from "./hero-section";
 import Schedule from "./schedule";
-import StatsSection from "./stats-section";
+import WhyOniria from "./why-oniria";
 import HowItWorks from "./how-it-works";
+import QualifySection from "./qualify-section";
 import { Zap, Workflow, Bot, Globe } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
@@ -16,7 +17,6 @@ export async function generateMetadata({
 }): Promise<Metadata> {
 
   const { locale } = await params;
-  // Get the translation function for the "Metadata" namespace
   const t = await getTranslations({ locale, namespace: 'LandingPage.Metadata' });
 
   return {
@@ -36,6 +36,7 @@ export default function LandingPage() {
       description: t("card1.description"),
       color: "from-brand-800 to-sky-600",
       glowColor: "#7c3aed",
+      href: "/solutions",
     },
     {
       icon: <Bot className="w-5 h-5" />,
@@ -43,6 +44,7 @@ export default function LandingPage() {
       description: t("card2.description"),
       color: "from-blue-600 to-indigo-600",
       glowColor: "#3b82f6",
+      href: "/solutions",
     },
     {
       icon: <Zap className="w-5 h-5" />,
@@ -50,6 +52,7 @@ export default function LandingPage() {
       description: t("card3.description"),
       color: "from-cyan-500 to-blue-500",
       glowColor: "#06b6d4",
+      href: "/solutions",
     },
     {
       icon: <Globe className="w-5 h-5" />,
@@ -57,6 +60,7 @@ export default function LandingPage() {
       description: t("card4.description"),
       color: "from-emerald-500 to-teal-500",
       glowColor: "#10b981",
+      href: "/solutions",
     },
   ];
 
@@ -65,13 +69,12 @@ export default function LandingPage() {
       {/* Hero Section with animated workflow */}
       <HeroSection />
 
-      {/* Stats / Social Proof */}
-      <StatsSection />
+      {/* Why Oniria — differentiators */}
+      <WhyOniria />
 
       {/* Features Section */}
       <section className="relative w-full py-28 overflow-hidden">
         <div className="absolute inset-0 bg-[#0a0a0f]" />
-        {/* Subtle brand color ambient light */}
         <div className="absolute top-0 right-1/4 w-125 h-125 bg-brand-500/5 rounded-full blur-[150px]" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6">
@@ -82,15 +85,14 @@ export default function LandingPage() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-800"></span>
               </span>
               <span className="text-xs font-medium text-brand-300 uppercase tracking-wider">
-                ¿Por qué elegirnos?
+                {t("features.badge")}
               </span>
             </div>
             <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-5 text-white">
               {t("title")}
             </h2>
             <p className="text-base md:text-lg text-[#94a3b8]">
-              Impulsamos la eficiencia operativa mediante tecnología de
-              vanguardia y orquestación inteligente.
+              {t("features.subtitle")}
             </p>
           </div>
 
@@ -99,6 +101,7 @@ export default function LandingPage() {
       </section>
 
       {/* How It Works */}
+      <QualifySection />
       <HowItWorks />
 
       {/* CTA / Schedule */}

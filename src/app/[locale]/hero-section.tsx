@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { Button } from "../../components/ui/button";
 import { useTranslations } from "next-intl";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, Play, Cpu, MessageCircle, BarChart2, Cloud, Database, Globe, Share2, Users } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 /* ───────── animated particles on the SVG flow ───────── */
@@ -586,15 +586,45 @@ export default function HeroSection() {
           <p className="text-xs uppercase tracking-[0.2em] text-[#94a3b8]/40 mb-6 font-medium">
             Herramientas que conectamos
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 opacity-40">
-            {["n8n", "Make", "Zapier", "HubSpot", "Slack"].map((tool) => (
-              <span
-                key={tool}
-                className="text-sm md:text-base font-semibold text-white/60 tracking-wider"
-              >
-                {tool}
-              </span>
-            ))}
+          {/* Infinite marquee */}
+          <div className="overflow-hidden w-full [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]">
+            <motion.div
+              animate={{ x: ["0%", "-50%"] }}
+              transition={{ duration: 28, ease: "linear", repeat: Infinity }}
+              className="flex gap-3 w-max"
+            >
+              {([
+                { name: "n8n",               icon: <Cpu className="w-3.5 h-3.5" />,           color: "#ea580c" },
+                { name: "WhatsApp Business",  icon: <MessageCircle className="w-3.5 h-3.5" />,  color: "#25D366" },
+                { name: "Meta Ads",           icon: <BarChart2 className="w-3.5 h-3.5" />,      color: "#0082FB" },
+                { name: "Salesforce",         icon: <Cloud className="w-3.5 h-3.5" />,          color: "#00A1E0" },
+                { name: "HubSpot",            icon: <Users className="w-3.5 h-3.5" />,          color: "#FF7A59" },
+                { name: "Google Workspace",   icon: <Globe className="w-3.5 h-3.5" />,          color: "#4285F4" },
+                { name: "Make",               icon: <Share2 className="w-3.5 h-3.5" />,         color: "#9333ea" },
+                { name: "CRM propio",         icon: <Database className="w-3.5 h-3.5" />,       color: "#7c3aed" },
+                { name: "n8n",               icon: <Cpu className="w-3.5 h-3.5" />,           color: "#ea580c" },
+                { name: "WhatsApp Business",  icon: <MessageCircle className="w-3.5 h-3.5" />,  color: "#25D366" },
+                { name: "Meta Ads",           icon: <BarChart2 className="w-3.5 h-3.5" />,      color: "#0082FB" },
+                { name: "Salesforce",         icon: <Cloud className="w-3.5 h-3.5" />,          color: "#00A1E0" },
+                { name: "HubSpot",            icon: <Users className="w-3.5 h-3.5" />,          color: "#FF7A59" },
+                { name: "Google Workspace",   icon: <Globe className="w-3.5 h-3.5" />,          color: "#4285F4" },
+                { name: "Make",               icon: <Share2 className="w-3.5 h-3.5" />,         color: "#9333ea" },
+                { name: "CRM propio",         icon: <Database className="w-3.5 h-3.5" />,       color: "#7c3aed" },
+              ] as { name: string; icon: React.ReactNode; color: string }[]).map((brand, idx) => (
+                <div
+                  key={idx}
+                  className="flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap select-none"
+                  style={{
+                    border: `1px solid ${brand.color}28`,
+                    backgroundColor: `${brand.color}0a`,
+                    color: `${brand.color}bb`,
+                  }}
+                >
+                  {brand.icon}
+                  {brand.name}
+                </div>
+              ))}
+            </motion.div>
           </div>
         </motion.div>
       </motion.div>
