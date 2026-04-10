@@ -1,0 +1,71 @@
+name: Quality Gate & Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  quality:
+    name: Quality Checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Type check
+        run: pnpm typecheck
+
+      - name: Build
+        run: pnpm build
+
+  deploy:
+    name: Deploy to Production
+    needs: quality
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_KEY }}
+          port: ${{ secrets.DEPLOY_PORT }}
+          script: |
+            set -e
+            cd /home/ppproducciones/webpage
+
+            # Pull latest code
+            git fetch origin main
+            git reset --hard origin/main
+
+            # Rebuild and restart
+            docker compose down
+            docker compose build --no-cache
+            docker compose up -d
+
+            # Wait for services
+            sleep 10
+
+            # Health check
+            if curl -sf http://localhost:3000/ > /dev/null 2>&1; then
+              echo "Deploy successful - app responding"
+            else
+              echo "WARNING: Health check failed, check logs"
+              docker compose logs --tail=20
+            fi
