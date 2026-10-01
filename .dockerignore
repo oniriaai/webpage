@@ -1,4 +1,5 @@
 .git
+.github
 .gitignore
 .next
 node_modules
@@ -15,7 +16,9 @@ yarn-error.log*
 pnpm-debug.log*
 .DS_Store
 .env
-.env*.local
+.env.*
+.vercel
+package-lock.json
 README.md
 agent-assist/
 Dockerfile
