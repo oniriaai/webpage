@@ -1,0 +1,67 @@
+name: Deploy to self-hosted VPS (manual)
+
+# Manual only. Production is Vercel, deployed from `main` by its GitHub
+# integration. This keeps the Docker + Cloudflare Tunnel path in this repo
+# runnable if we ever move hosts.
+#
+# Requires: DEPLOY_HOST / DEPLOY_USER / DEPLOY_KEY / DEPLOY_PORT secrets, and a
+# `.env` on the server holding CLOUDFLARE_TUNNEL_TOKEN (docker-compose.yml hard-
+# fails without it).
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type "deploy" to confirm'
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Deploy to VPS
+    runs-on: ubuntu-latest
+    if: inputs.confirm == 'deploy'
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_KEY }}
+          port: ${{ secrets.DEPLOY_PORT }}
+          script: |
+            set -e
+            cd /home/ppproducciones/webpage
+
+            # Pull latest code
+            git fetch origin main
+            git reset --hard origin/main
+
+            # Build the new image first. The old stack keeps serving traffic
+            # for the whole build, so downtime is just the container swap below.
+            docker compose build
+
+            # Swap in the new containers. Only services whose image or config
+            # changed are recreated, so the tunnel stays connected.
+            docker compose up -d --remove-orphans
+
+            # Wait for the new container to report healthy (HEALTHCHECK in the
+            # Dockerfile), rather than guessing with a fixed sleep.
+            status=starting
+            for _ in $(seq 1 30); do
+              status=$(docker inspect -f '{{.State.Health.Status}}' oniria-web 2>/dev/null || echo starting)
+              [ "$status" = "healthy" ] && break
+              sleep 2
+            done
+
+            if [ "$status" != "healthy" ]; then
+              echo "Deploy FAILED - app is $status"
+              docker compose logs --tail=50 web
+              exit 1
+            fi
+            echo "Deploy successful - app healthy"
+
+            # Reclaim the superseded image, scoped to this project so other
+            # stacks on the host are untouched.
+            docker image prune -f --filter "label=com.oniria.project=webpage"

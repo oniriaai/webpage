@@ -3,7 +3,10 @@
 
 import crypto from 'node:crypto';
 
-export async function submitContact(prevState: any, formData: FormData) {
+// Mirrors the `ActionState` the form declares for useActionState.
+type ActionState = { success?: boolean; error?: string } | null;
+
+export async function submitContact(prevState: ActionState, formData: FormData) {
     //import env var
     const secret = process.env.N8N_HMAC_SECRET!;
     const url = process.env.N8N_WEBHOOK_URL!;
