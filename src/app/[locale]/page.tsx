@@ -75,7 +75,7 @@ export default function LandingPage() {
       {/* Features Section */}
       <section className="relative w-full py-28 overflow-hidden">
         <div className="absolute inset-0 bg-[#0a0a0f]" />
-        <div className="absolute top-0 right-1/4 w-125 h-125 bg-brand-500/5 rounded-full blur-[150px]" />
+        <div className="absolute top-0 right-1/4 w-125 h-125 bg-brand-500/5 rounded-full blur-[75px] md:blur-[150px]" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">

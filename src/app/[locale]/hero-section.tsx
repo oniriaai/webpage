@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { Button } from "../../components/ui/button";
 import { useTranslations } from "next-intl";
 import { ArrowRight, Play, Cpu, MessageCircle, BarChart2, Cloud, Database, Globe, Share2, Users } from "lucide-react";
@@ -439,6 +439,7 @@ function WorkflowAnimation() {
 export default function HeroSection() {
   const t = useTranslations("AnimatedCard");
   const router = useRouter();
+  const reduceMotion = useReducedMotion();
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -461,9 +462,9 @@ export default function HeroSection() {
     <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden pt-24 pb-16">
       {/* ─── Background Effects ─── */}
       <div className="absolute inset-0 bg-[#0a0a0f]" />
-      <div className="absolute top-0 left-1/4 w-150 h-150 bg-brand-500/8 rounded-full blur-[120px]" />
-      <div className="absolute bottom-0 right-1/4 w-125 h-125 bg-blue-600/8 rounded-full blur-[120px]" />
-      <div className="absolute top-1/3 right-1/3 w-75 h-75 bg-brand-500/5 rounded-full blur-[80px] animate-pulse" />
+      <div className="absolute top-0 left-1/4 w-150 h-150 bg-brand-500/8 rounded-full blur-[70px] md:blur-[120px]" />
+      <div className="absolute bottom-0 right-1/4 w-125 h-125 bg-blue-600/8 rounded-full blur-[70px] md:blur-[120px]" />
+      <div className="absolute top-1/3 right-1/3 w-75 h-75 bg-brand-500/5 rounded-full blur-[60px] md:blur-[80px]" />
 
       {/* Grid pattern */}
       <div
@@ -480,7 +481,7 @@ export default function HeroSection() {
         variants={containerVariants}
         initial="hidden"
         animate="show"
-        className="relative z-10 text-center max-w-5xl mx-auto px-6"
+        className="relative z-10 w-full max-w-5xl mx-auto px-6 text-center"
       >
         {/* Pill badge */}
         <motion.div
@@ -544,7 +545,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 40, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 1, delay: 0.6, type: "spring", bounce: 0.2 }}
-          className="relative"
+          className="relative hidden md:block"
         >
           {/* Frame glow */}
           <div className="absolute -inset-1 bg-linear-to-r from-brand-500/20 via-blue-600/20 to-brand-500/20 rounded-3xl blur-xl" />
@@ -589,8 +590,12 @@ export default function HeroSection() {
           {/* Infinite marquee */}
           <div className="overflow-hidden w-full [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]">
             <motion.div
-              animate={{ x: ["0%", "-50%"] }}
-              transition={{ duration: 28, ease: "linear", repeat: Infinity }}
+              animate={reduceMotion ? undefined : { x: ["0%", "-50%"] }}
+              transition={
+                reduceMotion
+                  ? undefined
+                  : { duration: 28, ease: "linear", repeat: Infinity }
+              }
               className="flex gap-3 w-max"
             >
               {([

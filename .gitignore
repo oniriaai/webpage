@@ -8,6 +8,10 @@
 !.yarn/releases
 !.yarn/versions
 
+# pnpm is the only package manager here (see package.json "packageManager");
+# an npm lockfile alongside it lets CI, Vercel and Docker install different trees.
+package-lock.json
+
 # testing
 /coverage
 
@@ -31,6 +35,9 @@ pnpm-debug.log*
 # env files
 .env
 .env*.local
+
+# vercel
+.vercel
 
 # typescript
 *.tsbuildinfo

@@ -21,7 +21,7 @@ export default function QualifySection() {
     <section className="relative w-full py-28 overflow-hidden">
       <div className="absolute inset-0 bg-[#0a0a0f]" />
       {/* Subtle radial background */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-brand-500/4 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-brand-500/4 rounded-full blur-[80px] md:blur-[160px] pointer-events-none" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6">
         {/* Header */}

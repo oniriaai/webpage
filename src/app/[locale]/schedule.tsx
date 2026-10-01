@@ -68,7 +68,7 @@ export default function Schedule() {
           >
             <Button
               size="lg"
-              className="rounded-full h-14 px-10 text-base font-semibold bg-white text-[#0a0a0f] hover:bg-white/90 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,255,255,0.2)] hover:shadow-[0_0_60px_-15px_rgba(255,255,255,0.3)] group"
+              className="rounded-full h-auto min-h-14 py-4 px-6 sm:px-10 text-base font-semibold whitespace-normal bg-white text-[#0a0a0f] hover:bg-white/90 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,255,255,0.2)] hover:shadow-[0_0_60px_-15px_rgba(255,255,255,0.3)] group"
               onClick={onclickHandler}
             >
               <span className="flex items-center gap-2">
