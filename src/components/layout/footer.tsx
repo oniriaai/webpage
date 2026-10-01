@@ -13,7 +13,7 @@ function Footer() {
           {/* Logo & Tagline */}
           <div className="flex flex-col items-center md:items-start gap-2">
             <div className="flex items-center gap-2">
-              <img src="/icon.svg" className="h-6 w-auto" alt="ONIRIA" />
+              <img src="/logo.svg" width={24} height={24} className="h-6 w-6" alt="ONIRIA" />
               <span className="text-sm font-bold text-white/80">
                 ONIRIA
                 <span className="text-brand-500 font-normal ml-0.5 text-xs">

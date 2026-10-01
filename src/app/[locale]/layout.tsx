@@ -56,7 +56,6 @@ export default async function LocaleLayout({children, params}: Props) {
   return (
     <html lang={locale} className={cn("antialiased dark", fontMono.variable, "font-sans", inter.variable, spaceGrotesk.variable)} suppressHydrationWarning>
     <head>
-        <link rel="icon" type="image/x-icon" href="/icon.svg"></link>
         <meta name="theme-color" content="#0a0a0f" />
     </head>
     

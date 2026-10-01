@@ -32,7 +32,7 @@ export function ProcessPageLayout({ stepNumber, children }: ProcessPageLayoutPro
     <main className="min-h-screen bg-[#0a0a0f] text-white selection:bg-brand-500/30 selection:text-blue-200">
       {/* Background */}
       <div className="fixed inset-0 bg-[#0a0a0f] pointer-events-none" />
-      <div className="fixed top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-brand-500/5 rounded-full blur-[180px] pointer-events-none" />
+      <div className="fixed top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-brand-500/5 rounded-full blur-[90px] md:blur-[180px] pointer-events-none" />
 
       {/* Back + Step indicator bar */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 pt-28 pb-4">

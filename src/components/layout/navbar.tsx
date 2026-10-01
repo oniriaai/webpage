@@ -43,8 +43,10 @@ export default function Navbar() {
           href="/"
         >
           <img
-            src="/icon.svg"
-            className="h-8 w-auto mr-2.5 group-hover:rotate-6 transition-transform duration-300"
+            src="/logo.svg"
+            width={32}
+            height={32}
+            className="h-8 w-8 mr-2.5 group-hover:rotate-6 transition-transform duration-300"
             alt="ONIRIA"
           />
           <span className="bg-clip-text text-transparent bg-linear-to-r from-white to-white/80">
