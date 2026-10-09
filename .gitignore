@@ -42,3 +42,9 @@ pnpm-debug.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# graphify: machine-local interpreter path, scan root, extraction cache and token log
+/graphify-out/.graphify_python
+/graphify-out/.graphify_root
+/graphify-out/cache/
+/graphify-out/cost.json
